@@ -1320,12 +1320,12 @@ body {
 }
 .slick-prev {
     left: -80px;
-    background-image: url(../img/slider/left-arrow.png);
+    background-image: url(../img/slider/left-arrow.svg);
     background-repeat: no-repeat;
 }
 .slick-next {
     right: -80px;
-    background-image: url(../img/slider/right-arrow.png);
+    background-image: url(../img/slider/right-arrow.svg);
     background-repeat: no-repeat;
 }
 
@@ -1452,7 +1452,7 @@ body {
     cursor: pointer;
 }
 
-.radio input[type=radio] {
+.radio input[type=checkbox] {
     display: none;
 }
 
@@ -1480,7 +1480,7 @@ body {
     height: 20px;
     background: #efefef;
     border: 2px solid #bdbdbd;
-    border-radius: 50%;
+    border-radius: 5px;
     -webkit-transition: background 0.3s ease-out, border 0.3s ease-out, color 0.3s ease-out;
     transition: background 0.3s ease-out, border 0.3s ease-out, color 0.3s ease-out;
 }
@@ -1499,12 +1499,17 @@ body {
 	content: '';
     position: absolute;
     display: block;
-    top:11px;
-    left: 9px;
-    width: 6px;
-    height: 6px;
-    background: #fff;
-    border-radius: 100%;
+    top: 6px;
+    left: 4px;
+    width: 17px;
+    height: 17px;
+    /* border: 1px solid black; */
+    /* background: #fff; */
+    /* border-radius: 5px; */
+    background-image: url(../img/prices-form/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 74%;
 }
 
 

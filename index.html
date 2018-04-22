@@ -352,21 +352,21 @@
 				<legend class="prices-form__course-name-title">Выберите курс</legend>
 				<div class="radio">
 					<label class="radio-label">
-						<input name="base-course" type="radio" value="true" checked>
+						<input name="base-course" type="checkbox" value="true" checked>
 							<div class="prices-form__course-check-title">Базовый курс</div>
 							<div class="prices-form__course-check-text">Комментарий</div>
 					</label>
 				</div>
 				<div class="radio">
 					<label class="radio-label">
-						<input name="base-course" type="radio" value="false">
+						<input name="base-course" type="checkbox" value="false">
 							<div class="prices-form__course-check-title">Продвинутый курс</div>
 							<div class="prices-form__course-check-text">Комментарий</div>
 					</label>
 				</div>
 				<div class="radio">
 					<label class="radio-label">
-						<input name="base-course" type="radio" value="false">
+						<input name="base-course" type="checkbox" value="false">
 							<div class="prices-form__course-check-title">Супер пупер курс</div>
 							<div class="prices-form__course-check-text">Комментарий</div>
 					</label>
@@ -407,7 +407,7 @@
 			Убедитесь, что все просто и понятно!
 		</p>
 		<div class="faq-details__wrapper">
-			<details>
+			<details open>
 				<summary>1)	Я ничего не знаю в данной теме. Смогу ли я учиться?</summary>Да, программы курсов рассчитаны на новичков. Техническое образование не обязательно.
 			</details>
 
@@ -435,6 +435,13 @@
 				Вы получаете сертификат об окончании курса. Но главное, это знания, которые помогают начать работу в WEB-разработке или браться за более дорогостоящие проекты.
 			</details>
 		</div>
+
+		<form action="php/send.php" method="post">
+			<input type="text" name="fio" placeholder="Укажите ФИО" required>
+			<input type="text" name="email" placeholder="Укажите e-mail" required>
+			<input type="submit" value="Отправить">
+		</form>
+
 	</section>
 	<section class="free-access">
 		<span class="free-access__title">
