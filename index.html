@@ -14,8 +14,6 @@
 	<!-- шрифт!!!! -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
-
-
 </head>
 <body>
 	<header class="header-main">
@@ -252,6 +250,7 @@
 	</section>
 
 	<section class="course-price">
+		<!-- <h2>Чем ближе к началу курса, тем выше цена</h2> -->
 		<div class="course-price-wrapper">
 			<span class="course-price__base">12&thinsp;000</span>
 			<div class="course-price-next">
@@ -268,29 +267,6 @@
 			<span>Записать на курс и оплатить</span>
 		</a>
 	</section>
-
-
-
-<!-- 	<section class="discount">
-		<span class="discount-title">Стоимость каждой ступени 11 200 руб. <br> Это всего 1 400 руб. за 1 занятие <br> длительностью 120 минут.</span>
-		<p class="discount-txt">
-			За 1 400 руб. можно сходить с друзьями в кино или вложить их в свое образование и зарабатывать больше, чем сейчас!
-		</p>
-		<a href="#rebate" class="discount-btn">
-			<span>Хотите ощутимую скидку?</span>
-		</a>
-	</section> -->
-
-
-
-
-
-
-
-
-
-
-
 
 	<section id="new-advantages" class="new-advantages">
 		<span class="new-advantages_title">
@@ -331,20 +307,31 @@
 			Наши ученики по-настоящему довольны. <br>
 			И это не пустая уверенность, а реальный факт!
 		</span>
+
 		<div class="reviews-slider">
-		<a class="reviews-slider__link" href="">
-			<img 
-				class="reviews-slider__photo" 
-				src="img/slider/marina.png" 
-				alt="Марина отзыв"
-				width="144"
-				height="144" 
-			>
-			<p class="reviews-slider__text">“Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка”</p>
-		</a>
-			
+			<div class="reviews-slider__item">
+				<img 
+					class="reviews-slider__photo" 
+					src="img/slider/marina.png" 
+					alt="Марина отзыв"
+					width="144"
+					height="144" 
+				>
+				<span class="reviews-slider__text">“Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка”</span>
+			</div>
+			<div class="reviews-slider__item">
+				<img 
+					class="reviews-slider__photo" 
+					src="img/slider/marina.png" 
+					alt="Марина отзыв"
+					width="144"
+					height="144" 
+				>
+				<span class="reviews-slider__text">“Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель. Это очень удобный инструмент для моделей (макетов). Он помогает выделить визуальные элементы в документе или презентации, например текст, шрифт или разметка”</span>
+			</div>			
 		</div>
 	</section>
+
 	<section class="workplace-partners">
 		<span class="workplace-partners_title">Где работают наши выпускники?</span>
 		<p class="workplace-partners_txt">
@@ -510,16 +497,11 @@
 				<a  class="main-footer-info__link" href="tel:+1234567890"> Заказать Звонок</a>
 		</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script>
-		var num = 140; //number of pixels before modifying styles
-		$(window).bind('scroll', function () {
-		    if ($(window).scrollTop() >= num) {
-		        $('.menu').addClass('menu-dark');
-		    } else {
-		        $('.menu').removeClass('menu-dark');
-		    }
-		});
-	</script>
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/common.js"></script>
+
 </body>
 </html>
