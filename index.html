@@ -348,27 +348,31 @@
 		<span class="prices-title">Получить доступ к знаниям и хорошему доходу</span>
 		
 		<form class="prices-form" action="" method="post">
+			
+			<div clas="prices-form__header"></div>
+
+
 			<fieldset class="prices-form__course-name">
 				<legend class="prices-form__course-name-title">Выберите курс</legend>
 				<div class="radio">
 					<label class="radio-label">
 						<input name="base-course" type="checkbox" value="true" checked>
 							<div class="prices-form__course-check-title">Базовый курс</div>
-							<div class="prices-form__course-check-text">Комментарий</div>
+							<div class="prices-form__course-check-text">Вводный курс для слушателей, желающих освоить новую профессию</div>
+					</label>
+				</div>
+				<div class="radio">
+					<label class="radio-label">
+						<input name="base-course" type="checkbox" value="false">
+							<div class="prices-form__course-check-title">Инструменты веб-разработчика</div>
+							<div class="prices-form__course-check-text">Курс познакомит слушателей с такими инструментами как git, препроцессоры, системы автоматизации</div>
 					</label>
 				</div>
 				<div class="radio">
 					<label class="radio-label">
 						<input name="base-course" type="checkbox" value="false">
 							<div class="prices-form__course-check-title">Продвинутый курс</div>
-							<div class="prices-form__course-check-text">Комментарий</div>
-					</label>
-				</div>
-				<div class="radio">
-					<label class="radio-label">
-						<input name="base-course" type="checkbox" value="false">
-							<div class="prices-form__course-check-title">Супер пупер курс</div>
-							<div class="prices-form__course-check-text">Комментарий</div>
+							<div class="prices-form__course-check-text">Успешное прохождение курса позволит освоить пррофессию верстальщик</div>
 					</label>
 				</div>
 			</fieldset>
@@ -378,7 +382,8 @@
 				<legend class="prices-form__data-title">Личные данные</legend>
 				<input class="prices-form__item" type="text" placeholder="Имя" required>
 				<input class="prices-form__item" type="text" placeholder="Фамилия" required>
-				<input class="prices-form__item" type="tel" placeholder="Телефон" required>
+<!-- 				<input class="prices-form__item" type="tel" placeholder="Телефон" required> -->
+				<input class="prices-form__item" id="telNo" name="telNo" type="tel" placeholder="Телефон" required>
 				<input class="prices-form__item" type="email" placeholder="Почта" required>
 
 				<input class="privacy" checked="" id="privacy_agreement" name="privacy" type="checkbox" value="true">
