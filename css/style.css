@@ -478,7 +478,7 @@ body {
 .skills-list-item--third:before {
 	content: "";
 	width: 215px;
-	height: 160px;
+	height: 167px;
 	margin: 0 auto 26px auto;
 	display: block;
 	background-image: url('../img/skills-list-item/skills-list-item-3.svg');
@@ -489,7 +489,7 @@ body {
 .skills-list-item--fourth:before {
 	content: "";
 	width: 196px;
-	height: 137px;
+	height: 138px;
 	margin: 0 auto 26px auto;
 	display: block;
 	background-image: url('../img/skills-list-item/skills-list-item-4.svg');
