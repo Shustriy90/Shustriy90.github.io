@@ -367,7 +367,7 @@ body {
 	padding-bottom: 59px;
 	padding-left: 20%;
 	background-color: white;
-	background-image: url('../img/introduction-background.png');
+	background-image: url('../img/introduction-background.svg');
 	background-repeat: no-repeat;
 	background-position: 963px 83px;
 	background-size: 600px;
@@ -769,7 +769,7 @@ body {
 }
 
 .level {
-	width: 271px;
+	width: 300px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
