@@ -376,21 +376,21 @@
 				<legend class="prices-form__course-name-title">Выберите курс</legend>
 				<div class="radio">
 					<label class="radio-label">
-						<input name="base-course" type="checkbox" value="true" checked>
+						<input name="base-course" type="checkbox" value="true" onclick="updatePrice(this, 9800)" checked>
 							<div class="prices-form__course-check-title">Базовый курс</div>
 							<div class="prices-form__course-check-text">Вводный курс для слушателей, желающих освоить новую профессию</div>
 					</label>
 				</div>
 				<div class="radio">
 					<label class="radio-label">
-						<input name="base-course" type="checkbox" value="false">
+						<input name="base-course" type="checkbox" value="false" onclick="updatePrice(this, 9800)">
 							<div class="prices-form__course-check-title">Инструменты веб-разработчика</div>
 							<div class="prices-form__course-check-text">Курс познакомит слушателей с такими инструментами как git, препроцессоры, системы автоматизации</div>
 					</label>
 				</div>
 				<div class="radio">
 					<label class="radio-label">
-						<input name="base-course" type="checkbox" value="false">
+						<input name="base-course" type="checkbox" value="false" onclick="updatePrice(this, 9800)">
 							<div class="prices-form__course-check-title">Продвинутый курс</div>
 							<div class="prices-form__course-check-text">Успешное прохождение курса позволит освоить пррофессию верстальщик</div>
 					</label>
@@ -415,9 +415,8 @@
 			<div class=prices-form__summary>
 				<div>
 					<span class="prices-form__summary-title">Стоимость:</span>
-					<span class="prices-form__summary-price">9900
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="-298.408 389 10.816 16"><path d="M-298.318 397.939v-1.162h1.341V389h4.112c.894 0 1.609.089 2.235.268.626.179 1.251.447 1.609.894.358.358.804.894 1.073 1.341.268.447.358 1.162.358 1.788 0 .804-.089 1.43-.358 1.966s-.626 1.073-1.162 1.43c-.536.447-1.073.715-1.877.983s-1.52.268-2.413.268h-2.235v2.503h4.469v1.251h-4.469V405h-1.43v-3.218h-1.341v-1.251h1.341v-2.503h-1.251v-.089zm2.86-7.688v6.525h2.324c1.43 0 2.413-.268 3.039-.894.626-.536.983-1.43.983-2.503s-.268-1.788-.983-2.413c-.715-.536-1.609-.804-2.86-.804h-2.503v.089z" fill="#282828"></path></svg>
-					</span>
+					<span class="prices-form__summary-price" id="price">9900</span>
+					<svg class="prices-form__summary-unit" width="12" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="-298.408 389 10.816 16"><path d="M-298.318 397.939v-1.162h1.341V389h4.112c.894 0 1.609.089 2.235.268.626.179 1.251.447 1.609.894.358.358.804.894 1.073 1.341.268.447.358 1.162.358 1.788 0 .804-.089 1.43-.358 1.966s-.626 1.073-1.162 1.43c-.536.447-1.073.715-1.877.983s-1.52.268-2.413.268h-2.235v2.503h4.469v1.251h-4.469V405h-1.43v-3.218h-1.341v-1.251h1.341v-2.503h-1.251v-.089zm2.86-7.688v6.525h2.324c1.43 0 2.413-.268 3.039-.894.626-.536.983-1.43.983-2.503s-.268-1.788-.983-2.413c-.715-.536-1.609-.804-2.86-.804h-2.503v.089z" fill="#282828"></path></svg>
 				</div>
 				<input type="submit" name="commit" value="Записаться" class="prices-form__summary-btn">
 			</div>
