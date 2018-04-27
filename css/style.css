@@ -561,10 +561,10 @@ body {
 }
 
 .main-goal-portfolio {
-	width: 748px;
-	height: 407px;
+	width: 60%;
+	height: 60%;
 	display: block;
-	margin: 0 0 0 28.3%;
+	margin: 0 auto;
 }
 
 .main-goal-bonus {
