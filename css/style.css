@@ -158,7 +158,8 @@ body {
 	/*padding-top: 10px;*/
 	/*display: block;*/
 	text-decoration: none;
-	font-family: "Montserrat", sans-serif;	
+	/*font-family: "Montserrat", sans-serif;*/
+	font-family: 'Exo 2', sans-serif;
 	color:  #fefefe;
 	font-size: 18px;
 	font-weight: 300;
@@ -179,7 +180,7 @@ body {
     max-width: 300px;
     /*padding: 10px 30px;*/
     /*padding: 10px 30px;*/
-    padding: 5px 10px;
+    padding: 7px 20px;
     color: #fff;
     /*font-size: 0.775em;*/
     font-size: 0.8em;
@@ -285,9 +286,9 @@ body {
 .menu-dark .menu-link__buy {
     min-width: 170px;
     height: 30px;
-    padding: 5px 10px;
-    font-size: 0.8em;
-    font-weight: 600;
+    padding: 5px 20px;
+    font-size: 1em;
+    font-weight: 500;
     margin: 0 0 0 60px;
 }
 
@@ -1908,10 +1909,13 @@ input[type="text"] {
 	color: #ffffff;
 	font-family: "Montserrat", sans-serif;
 	text-align: center;
-	background-color: rgba(45, 45, 45, 0.7);
+	/*background-color: rgba(45, 45, 45, 0.7);*/
+	background-color: #2b3537;
 	background-image: url('../img/rebate/rebate-bgn.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-image: url('../img/rebate/rebate-bgn.svg');
+	/*background-repeat: no-repeat;*/
+	background-size: 15%;
+	background-position: 80px 50px;
 }
 
 .rebate__title {
