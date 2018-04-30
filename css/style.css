@@ -2046,8 +2046,10 @@ input[type="text"] {
 	/*padding: 54px 0 59px 0;*/
 	padding: 90px 0 59px 0;
 	color: #3b3b3b;
-	font-family: 'Exo 2', sans-serif;
+	/*font-family: 'Exo 2', sans-serif;*/
+	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
+	color: #7d7d7d;
 /*		background: 
 url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	url('../img/faq/right-bgn.png') 1500px center no-repeat fixed;
