@@ -2102,7 +2102,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	font-size: 19px;
 	font-style: italic;
 	line-height: 30px;
-	color: #5e6060;
+	/*color: #5e6060;*/
 }
 
 .faq details:hover {
@@ -2113,7 +2113,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	cursor: pointer;
 	/*color: #c1c1cd;*/
 	/*color: #212135;*/
-	color: #5e6060;
+	/*color: #5e6060;*/
 }
 
 .faq summary {
