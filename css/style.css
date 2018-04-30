@@ -2049,7 +2049,7 @@ input[type="text"] {
 	/*font-family: 'Exo 2', sans-serif;*/
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
-	color: #7d7d7d;
+	
 /*		background: 
 url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	url('../img/faq/right-bgn.png') 1500px center no-repeat fixed;
@@ -2102,6 +2102,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	font-size: 19px;
 	font-style: italic;
 	line-height: 30px;
+	color: #5e6060;
 }
 
 .faq details:hover {
@@ -2111,7 +2112,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 .faq details:hover summary {
 	cursor: pointer;
 	/*color: #c1c1cd;*/
-	color: #212135;
+	/*color: #212135;*/
+	color: #5e6060;
 }
 
 .faq summary {
