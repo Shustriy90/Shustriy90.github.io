@@ -867,7 +867,7 @@ body {
 }
 
 .level {
-	width: 325px;
+	width: 400px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -890,6 +890,12 @@ body {
 }
 
 .level-link_title {
+	display: block;
+	font-size: 20px;
+	/*margin: 0 0 20px 0;*/
+}
+
+.level-link_subtitle {
 	font-size: 20px;
 	font-weight: 400;
 	/*ПРОВЕРИТЬ НАЧЕРТАНИЕ!!!!!*/
