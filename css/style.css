@@ -1070,10 +1070,11 @@ body {
 
 
 .course-price-next:nth-child(2) {
-	margin: 0 60px 0 0;
+	margin: 0 60px 0 30px;
 }
 
 .course-price-next:last-child {
+	margin: 0 0 0 30px;
     background: linear-gradient(90deg, #deefe5 33%, #09a059 86%, #09a059);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
