@@ -586,140 +586,223 @@ body {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 	/*height: 949px;*/
-	padding-top: 68px;
+/*	padding-top: 68px;
 	padding-top: 80px;
-	padding-bottom: 114px;
+	padding-bottom: 114px;*/
+	padding: 80px 40px 114px 40px;
 	background-color: #e6e6e6;
 	background-image: url('../img/programm/programm-section-background.png');
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;*/
 	/*background-position: center;*/
-	background-size: cover;
+	background-size: 100%;
 }
 
 .programm-title {
-/*	width: 657px;
-	height: 33px;*/
-	width: 100%;
-	/*display: block;*/
-	/*margin: 0 auto;*/
-	margin-bottom: 65px;
-	text-align: center;
 	color: #3b3b3b;
-	font-family: 'Exo 2', sans-serif;
 	font-size: 35px;
-	font-weight: 500;
+	font-weight: 600;
+	margin: 0 0 40px 0;
 }
 
+.programm-subtitle {
+	font-size: 28px;
+	font-weight: 500;
+	margin: 0 0 65px 0;
+}
+
+.programm-title,
+.programm-subtitle {
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	line-height: 1.5;
+}
 
 .programm-part {
-	width: 556px;
+	/*width: 530px;*/
 	/*height: 605px;*/
-	padding-bottom: 65px;
+	/*padding-bottom: 65px;*/
+	padding: 20px;
 	box-sizing: border-box;
-	box-shadow: 0 5px 0 rgba(0, 0, 0, 0.4);
-	background-color: #f19b05;
-	position: relative;
+	/*box-shadow: 0 5px 0 rgba(0, 0, 0, 0.4);*/
+	box-shadow: 0 14px 12px 1px rgba(0, 0, 2, 0.24);
+	background-color: #fff;
+	/*border-radius: 5px;*/
+	border-radius: 5px 0px 0px 5px;
+	-webkit-transition: box-shadow 0.3s ease-out, background 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    transition: box-shadow 0.3s ease-out, background 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 
-.programm-part:hover  .programm-part_title {
-	background-color: #1e2626;
+.programm-part:hover {
+	box-shadow: 0 11px 16px 2px rgba(0, 0, 2, 0.24);
 }
-
 
 .programm-part--first {
-	margin-right: 29px;
+	/*margin-right: 29px;*/
+	margin: 0 0 0 5%;
+	align-self: flex-start;
+	position: relative;
+	z-index: 1;
+	background-image: url(../img/programm/plane-base.svg);
+    background-repeat: no-repeat;
+    background-position: 60% 85%;
+    background-size: 80%;
 }
 
-.programm-part--first:hover {
-	background-color: gold;
-}
-
-.programm-part--first:hover .programm-part_list {
-	color: black;
+.programm-part--first:hover,
+.programm-part--second:hover,
+.programm-part--third:hover {
+	background-image: none;
 }
 
 .programm-part--first:after {
 	content: "";
-	display: block;
-	width: 272px;
-	height: 261px;
-	opacity: 0.9;
-	background-image:url('../img/programm/first-programm-icon.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	position: absolute;
-	/*top: 700px;*/
-    left: -200px;
-    right: 0;
-    bottom: -115px;
+    display: block;
+	width: 106%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('../img/programm/programm-dotted-line-base.svg');
+    transition: background-image 0.3s ease-out;
+    position: absolute;
+	top: 20%;
+    left: 100%;
+    z-index: 0;
 }
 
-.programm-part--first:hover:after {
-	opacity: 1;
+.programm-part--first:before {
+	content: ""; 
+    width: 0;
+	transition: width 0.3s ease-out;
+}
+
+.programm-part--first:hover:before {
+	content: "Вводный курс для слушателей, желающих освоить новую профессию";
+    display: flex;
+    align-items: center;
+    width: 294px;
+    height: 585px;
+    background-color: #f7fcfd;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    color: #7d7d7d;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+	box-shadow: 0 11px 16px 2px rgba(0, 0, 2, 0.24);
 }
 
 .programm-part--second {
-	background-color: #477cbf;
-}
-
-.programm-part--second:hover {
-	background-color: #0028f7;
-}
-
-.programm-part--second:hover .programm-part_list {
-	color: white;
+	/*margin-right: 29px;*/
+	margin: 10% 5% 0 0;
+	align-self: center;
+	position: relative;
+	z-index: 0;
+	background-image: url(../img/programm/plane-tools.svg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position-x: 130px;
+    background-position-y: 60%;
 }
 
 .programm-part--second:after {
-	content: "";
-	display: block;
-	width: 304px;
-	height: 226px;
-	opacity: 0.9;
-	background-image:url('../img/programm/second-programm-icon.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	position: absolute;
-	/*top: 700px;*/
-    left: 480px;;
-    right: 0;
-    bottom: -116px;
+    content: "";
+    display: block;
+    width: 106%;
+    height: 132%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/programm/programm-dotted-line-pro.svg);
+    transition: background-image 0.3s ease-out;
+    position: absolute;
+    top: 108%;
+    right: -17%;
+    z-index: 1;
+    transform: rotate(22deg);
 }
 
-.programm-part--second:hover:after {
-	opacity: 1;
+.programm-part--third {
+	align-self: flex-end;
+	/*margin: 10% 0 0 30%;*/
+	margin: 10% 0 0 22%;
+	background-image: url(../img/programm/plane-pro.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: 537px;
+    background-position-y: 88%;
 }
 
 .programm-part_title {
 	/*width: 556px;*/
-	height: 64px;
-	display: block;
-	line-height: 64px;
+	/*height: 64px;*/
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin: 0 0 40px 0;
+	padding: 0 0 20px 0;
+	line-height: 1.5;
 	text-align: center;
-	background-color: #5e6060;
-	color: #ffffff;
-	font-family: "Exo 2- Semi Bold";
-	/*-----------------------------*/
-	/*------------------------------*/
-	font-family: 'Exo 2', sans-serif;
-	font-size: 30px;
-	font-weight: 400;
+	/*background-color: #5e6060;*/
+	color: #7d7d7d;
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	border: none;
+    border-bottom: 1px solid #ded9d9;
+    transition: color 0.3s ease-out;
 }
 
+.programm-part:hover .programm-part_title {
+	color: black;
+}
+
+.programm-part .programm-part_title:before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 0 20px 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: background-image 0.3s ease-out;
+}
+
+.programm-part:first-of-type .programm-part_title:before {
+    background-image: url('../img/programm/basic-course.svg');
+}
+
+.programm-part:nth-of-type(2) .programm-part_title:before {
+    background-image: url('../img/programm/tools-course.svg');
+}
+
+.programm-part:last-of-type .programm-part_title:before {
+    background-image: url('../img/programm/pro-course.svg');
+}
+
+
+.programm-part:first-of-type:hover .programm-part_title:before {
+    background-image: url('../img/programm/basic-course-hover.svg');
+}
+
+.programm-part:nth-of-type(2):hover .programm-part_title:before {
+    background-image: url('../img/programm/tools-course-hover.svg');
+}
+
+.programm-part:last-of-type:hover .programm-part_title:before {
+    background-image: url('../img/programm/pro-course-hover.svg');
+}
 /*ОБРАТИТЬ ВНИМАНИЕ НА ШРИФТ!*/
 /*----------------------------------*/
 
 
 .programm-part_list {
 	list-style-type: none;
-	padding-left: 0;
-	margin-top: 59px;
-	margin-left: 99px;
-	margin-right: 39px;
-	font-family: 'Exo 2', sans-serif;
-	color: #ffffff;
+	padding: 0 0 0 15px;
+	font-family: "Montserrat", sans-serif;
+	color: black;
 }
 
 .programm-part_item:last-child {
@@ -730,10 +813,6 @@ body {
 	font-size: 20px;
 	font-weight: 400;
 	margin-bottom: 39px;
-}
-
-.programm-part_item:first-child:hover {
-	text-decoration: none;
 }
 
 .programm-part_item:hover {
@@ -1578,7 +1657,7 @@ body {
 	width: 25px;
 	height: 25px;
 	margin: 0 20px 0 0;
-	background-image: url('../img/prices-form/basic-course.svg');
+	background-image: url('../img/programm/basic-course.svg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
@@ -1589,7 +1668,7 @@ body {
 	width: 25px;
 	height: 25px;
 	margin: 0 20px 0 0;
-	background-image: url('../img/prices-form/tools-course.svg');
+	background-image: url('../img/programm/tools-course.svg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
@@ -1600,7 +1679,7 @@ body {
 	width: 25px;
 	height: 25px;
 	margin: 0 20px 0 0;
-	background-image: url('../img/prices-form/pro2-course.svg');
+	background-image: url('../img/programm/pro-course.svg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
@@ -2097,6 +2176,10 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	height: 100px;
 	padding: 12px;
 	line-height: 1.5;
+	outline: none;
+	-moz-appearance: none;
+	resize: none;
+	overflow: auto;
 }
 
 .faq-form__btn  {
