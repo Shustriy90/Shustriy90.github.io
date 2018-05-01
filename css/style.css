@@ -593,10 +593,16 @@ body {
 	padding-bottom: 114px;*/
 	padding: 80px 40px 114px 40px;
 	background-color: #e6e6e6;
-	background-image: url('../img/programm/programm-section-background.png');
+	/*background-image: url('../img/programm/programm-section-background.png');*/
 	/*background-repeat: no-repeat;*/
 	/*background-position: center;*/
-	background-size: 100%;
+	/*background-size: 100%;*/
+
+
+	background-image: url(../img/programm/programm-section-background.png), url(../img/programm/programm-dotted-line-base.svg), url(../img/programm/programm-dotted-line-pro.svg);
+    background-repeat: repeat, no-repeat, no-repeat;
+	background-position: center, 53% 26%, 86.7% 70.6%;
+    background-size: 100%, 32%, 26%;
 }
 
 .programm-title {
@@ -630,13 +636,13 @@ body {
 	box-shadow: 0 14px 12px 1px rgba(0, 0, 2, 0.24);
 	background-color: #fff;
 	/*border-radius: 5px;*/
-	border-radius: 5px 0px 0px 5px;
+	border-radius: 5px;
 	-webkit-transition: box-shadow 0.3s ease-out, background 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
     transition: box-shadow 0.3s ease-out, background 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 
 .programm-part:hover {
-	box-shadow: 0 11px 16px 2px rgba(0, 0, 2, 0.24);
+	box-shadow: 10px 11px 16px 2px rgba(0, 0, 2, 0.24);
 }
 
 .programm-part--first {
@@ -651,13 +657,17 @@ body {
     background-size: 80%;
 }
 
+.programm-part--first:hover {
+	border-radius: 5px 0px 0px 5px;
+}
+
 .programm-part--first:hover,
 .programm-part--second:hover,
 .programm-part--third:hover {
 	background-image: none;
 }
 
-.programm-part--first:after {
+/*.programm-part--first:after {
 	content: "";
     display: block;
 	width: 106%;
@@ -670,12 +680,12 @@ body {
 	top: 20%;
     left: 100%;
     z-index: 0;
-}
+}*/
 
 .programm-part--first:before {
 	content: ""; 
     width: 0;
-	transition: width 0.3s ease-out;
+	transition: width 0.4s ease-out;
 }
 
 .programm-part--first:hover:before {
@@ -683,16 +693,27 @@ body {
     display: flex;
     align-items: center;
     width: 294px;
-    height: 585px;
-    background-color: #f7fcfd;
+    height: 100%;
+    padding: 0 20px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #fff;
+	background-repeat: no-repeat;
+    background-image: url(../img/programm/programm-part--first-before.svg);
+    background-position: 20px 60%;
+    background-size: 150%;
     position: absolute;
     top: 0;
+    z-index: 3;
     left: 100%;
-    color: #7d7d7d;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
+    font-weight: 600;
+    color: #7d7d7d;
     line-height: 1.5;
     text-align: center;
-	box-shadow: 0 11px 16px 2px rgba(0, 0, 2, 0.24);
+	/*box-shadow: 0 11px 16px 2px rgba(0, 0, 2, 0.24);*/
+	box-shadow: 10px 11px 16px 0px rgba(0, 0, 2, 0.24);
+	
 }
 
 .programm-part--second {
@@ -708,7 +729,7 @@ body {
     background-position-y: 60%;
 }
 
-.programm-part--second:after {
+/*.programm-part--second:after {
     content: "";
     display: block;
     width: 106%;
@@ -722,7 +743,7 @@ body {
     right: -17%;
     z-index: 1;
     transform: rotate(22deg);
-}
+}*/
 
 .programm-part--third {
 	align-self: flex-end;
@@ -1546,7 +1567,8 @@ body {
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
-	padding: 45px 0 60px 0;
+	/*padding: 45px 0 60px 0;*/
+	padding: 45px 0 20px 0;
 	background-color: #e6e6e6;
 	color: #3b3b3b;
 	font-family: "Montserrat", sans-serif;
@@ -1566,7 +1588,8 @@ body {
 .workplace-partners_txt {
 	width: 100%;
 	font-size: 23px;
-	margin: 0 0 55px 0;
+	/*margin: 0 0 55px 0;*/
+	margin: 0 0 25px 0;
 }
 
 .workplace-partners_logo {
@@ -1577,8 +1600,21 @@ body {
 	/*background-color: ;*/
 	background-image: url('../img/partners/intel.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 90%;
 	background-position: center;
+	/*обрати внимание*/
+	border-radius: 50%;
+	border: 1px dashed transparent;
+    width: 160px;
+    height: 160px;
+    padding: 5px;
+    transition: border 0.3s ease-out;
+}
+
+.workplace-partners_logo:hover {
+	-webkit-filter: saturate(10);
+  	filter: saturate(10);
+  	border: 1px dashed #7d7d7d;
 }
 
 .workplace-partners_logo:first-of-type {
