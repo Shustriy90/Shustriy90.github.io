@@ -20,7 +20,7 @@ body {
 	margin: 0 auto;
 	width: 1916px;
 	line-height: 1;
-    font-family: 'exo_2regular', 'Arial', sans-serif;
+    /*font-family: 'exo_2regular', 'Arial', sans-serif;*/
     word-wrap: break-word;
     text-rendering: optimizeLegibility;
 }
@@ -42,8 +42,6 @@ body {
 }
 
 /*----SVG - логотип----*/
-.header-logo
-
 .header-logo .cls-1{fill:#5b7bbb;}
 .header-logo .cls-2{fill:#5b7bbb;}
 .header-logo .cls-20{fill:#5b7bbb;}
@@ -639,11 +637,12 @@ body {
 	border-radius: 5px;
 	-webkit-transition: box-shadow 0.3s ease-out, background 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
     transition: box-shadow 0.3s ease-out, background 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    position: relative;
 }
 
-.programm-part:hover {
-	box-shadow: 10px 11px 16px 2px rgba(0, 0, 2, 0.24);
-}
+/*.programm-part:hover {
+	box-shadow: 10px 10px 16px 2px rgba(0, 0, 2, 0.24);
+}*/
 
 .programm-part--first {
 	/*margin-right: 29px;*/
@@ -657,40 +656,35 @@ body {
     background-size: 80%;
 }
 
-.programm-part--first:hover {
+.programm-part--first:hover,
+.programm-part--third:hover {
+	box-shadow: 10px 10px 16px 0px rgba(0, 0, 2, 0.24);
 	border-radius: 5px 0px 0px 5px;
+}
+
+.programm-part--second:hover {
+	box-shadow: -10px 10px 16px 0px rgba(0, 0, 2, 0.24);
+	border-radius: 0px 5px 5px 0px;
 }
 
 .programm-part--first:hover,
 .programm-part--second:hover,
 .programm-part--third:hover {
 	background-image: none;
+/*	background: linear-gradient(#fff, transparent);
+*/	/*background: linear-gradient(#fff, #fff);*/
 }
 
-/*.programm-part--first:after {
-	content: "";
-    display: block;
-	width: 106%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: url('../img/programm/programm-dotted-line-base.svg');
-    transition: background-image 0.3s ease-out;
-    position: absolute;
-	top: 20%;
-    left: 100%;
-    z-index: 0;
-}*/
-
-.programm-part--first:before {
+/*.programm-part--first:before {
 	content: ""; 
     width: 0;
 	transition: width 0.4s ease-out;
-}
+}*/
 
-.programm-part--first:hover:before {
-	content: "Вводный курс для слушателей, желающих освоить новую профессию";
-    display: flex;
+.programm-part_hint {
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
     align-items: center;
     width: 294px;
     height: 100%;
@@ -698,22 +692,60 @@ body {
     border-radius: 0px 5px 5px 0px;
     background-color: #fff;
 	background-repeat: no-repeat;
-    background-image: url(../img/programm/programm-part--first-before.svg);
-    background-position: 20px 60%;
-    background-size: 150%;
     position: absolute;
-    top: 0;
+    top: -18px;
     z-index: 3;
-    left: 100%;
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #7d7d7d;
     line-height: 1.5;
     text-align: center;
 	/*box-shadow: 0 11px 16px 2px rgba(0, 0, 2, 0.24);*/
-	box-shadow: 10px 11px 16px 0px rgba(0, 0, 2, 0.24);
+	box-shadow: 10px 10px 16px 0px rgba(0, 0, 2, 0.24);
+/*	transition: visibility 0s ease-out, opacity 0.75s ease-out;
+*/	transition: opacity 0.8s, visibility 0.9s;
 	
+}
+
+.programm-part--first .programm-part_hint,
+.programm-part--third .programm-part_hint {
+	left: 100%;
+	width: 280px;
+}
+
+.programm-part--second .programm-part_hint {
+	width: 285px;
+	right: 100%;
+	box-shadow: -10px 10px 16px 0px rgba(0, 0, 2, 0.24);
+	border-radius: 5px 0px 0px 5px;
+}
+
+
+
+.programm-part--first:hover .programm-part_hint,
+.programm-part--second:hover .programm-part_hint,
+.programm-part--third:hover .programm-part_hint {
+	opacity: 1;
+	visibility: visible;
+}
+
+.programm-part--first:hover .programm-part_hint {
+    background-image: url(../img/programm/programm-part--first-hint.svg);
+    background-position: 20px 50%;
+    background-size: 180%;
+}
+
+.programm-part--second:hover .programm-part_hint {
+    background-image: url(../img/programm/programm-part--second-hint.svg);
+    background-position: 50px 50%;
+    background-size: 95%;
+}
+
+.programm-part--third:hover .programm-part_hint {
+    background-image: url(../img/programm/programm-part--third-hint.svg);
+    background-position: 50px 50%;
+    background-size: 95%;
 }
 
 .programm-part--second {
@@ -728,22 +760,6 @@ body {
     background-position-x: 130px;
     background-position-y: 60%;
 }
-
-/*.programm-part--second:after {
-    content: "";
-    display: block;
-    width: 106%;
-    height: 132%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../img/programm/programm-dotted-line-pro.svg);
-    transition: background-image 0.3s ease-out;
-    position: absolute;
-    top: 108%;
-    right: -17%;
-    z-index: 1;
-    transform: rotate(22deg);
-}*/
 
 .programm-part--third {
 	align-self: flex-end;
@@ -908,6 +924,10 @@ body {
 	text-decoration: none;
 	color: #ffffff;
 	line-height: 31px;
+}
+
+.level-link:hover .level-link_title {
+	text-decoration: underline;
 }
 
 .level-link_title {
