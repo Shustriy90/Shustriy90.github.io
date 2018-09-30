@@ -24,3 +24,10 @@ function updatePrice(chk, value) {
   }
   document.querySelector("#price").textContent = currentPrice;
 }
+
+$(".menu-btn__trigger").click(function() {
+  $(".menu-btn__trigger").toggleClass('show-menu-btn');
+  $(".menu").toggleClass('menu-hide');
+  $(".menu").toggleClass('main-dropdown');
+  $("body").toggleClass('body-overflow');
+})
