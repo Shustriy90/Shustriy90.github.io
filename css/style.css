@@ -2791,7 +2791,7 @@ top: 90px;
 
 .menu-dark .menu-link__buy {
     margin: 0;
-    padding: 5px 0px;
+    padding: 10px 0px;
 }
 
 /*------*/
@@ -3831,6 +3831,7 @@ top: 90px;
 	}
 	.advantages-first-header {
     	font-size: 1.4em;
+    	margin-top: 20px;
 	}
 	.advantages-second-header {
     	font-size: 0.8em;
@@ -3844,20 +3845,34 @@ top: 90px;
     	margin: 0 auto 10px auto;
 	}
 
+	.introduction {
+		padding: 20px;
+	}
+
+	.intriduction_txt:after {
+		width: 100%;
+		margin-top: 15px;
+	}
+
+	.intriduction_about-html {
+		margin: 15px 0 0 0;
+	}
+
 	.skills-header {
-	    margin: 10px 0 20px 0;
+	    margin: 10px 0 25px 0;
 	    font-size: 1.2em;
 	}
 	.skills-list-item {	
 		font-size: 0.7em;
 		margin-bottom: 25px;	
 		padding: 0 4px;	
-		width: 48%;;
+		width: 48%;
 	}
 
 	.skills-list-item--first:before {
-		width: 162px;
+		width: 150px;
 		height: 150px;
+		margin: 0 auto;
 	}
 
 	.skills-list-item--second {
@@ -3865,23 +3880,27 @@ top: 90px;
 	}
 
 	.skills-list-item--second:before {
-		width: 157px;
+		width: 144px;
 		height: 149px;
+		margin: 0 auto;
 	}
 
 	.skills-list-item--third:before {
-		width: 195px;
+		width: 175px;
 		height: 153px;
+		margin: 0 auto;
 	}
 
 	.skills-list-item--fourth:before {
-		width: 183px;
-		height: 152px;
+		width: 169px;
+	    height: 137px;
+	    margin-bottom: 15px;
 	}
 
 	.skills-list-item--fifth:before {
-		width: 165px;
-		height: 139px;	
+		width: 155px;
+		height: 139px;
+		margin: 0 auto;	
 	}
 
 	.main-goal {
@@ -3894,7 +3913,9 @@ top: 90px;
 	}
 
 	.main-goal-txt {
-		font-size: 0.8em;;
+		width: 100%;
+		font-size: 0.8em;
+		margin: 25px auto;
 	}
 
 	.main-goal-txt--width {
@@ -3912,6 +3933,18 @@ top: 90px;
 	.programm {
 	    padding: 10px 15px;
 	}
+
+	.programm-title {
+		margin: 15px 0 25px 0;
+	}
+
+
+	.programm-subtitle {
+		font-size: 1em;
+	}
+
+
+
 	.programm-part_title {
 		text-align: left;
 		justify-content: flex-start;
@@ -3991,6 +4024,116 @@ top: 90px;
 	.course-price__btn span {
 		font-size: 0.9em;
 	}
+
+
+
+	.new-advantages-item {
+		line-height: 1.4;
+		font-size: 0.9em;
+	}
+
+
+
+	.about-teacher:before {
+		width: 95%;
+		font-size: 1.2EM
+	}
+
+	.about-teacher img { 
+		margin: 15px auto;
+	}
+
+
+
+
+	.workplace-partners_logo {
+		margin: 5px;
+	}
+
+
+
+
+
+	.prices-form__course-check-title {
+		font-size: 0.85em;
+	}
+
+
+	.prices-form__course-check-text {
+		font-size: 0.75em;
+	}
+
+	.prices-form__data {
+		width: 100%;
+		padding: 15px 25px 15px 25px;
+	}
+
+	.prices-form__summary {
+		padding: 30px 20px 30px 20px;
+	}
+
+	.prices-form__summary-title {
+		font-size: 0.8em;
+	}
+
+	.prices-form__summary-price {
+		font-size: 1.4em;
+	}
+
+
+	.prices-form__summary-btn {
+		min-width: 180px;
+		max-width: 200px;
+	    font-size: 1.1em;
+	}
+
+
+
+
+
+	.rebate__terms {
+		width: 80%;
+	}
+
+
+
+
+
+	.faq {
+		padding: 35px 0 59px 0;
+	}
+
+
+
+	.free-access__btn span {
+	    font-size: 0.85em;
+	}
+
+
+
+	.main-footer {
+	    padding: 33px 20px 15px 20px;
+	}
+
+	.main-footer-info {
+	    margin-top: 8px;
+	}
+
+	.main-footer-info__phone {
+	    font-size: 0.9em;
+	    margin-bottom: 4px;
+	}
+
+	.main-footer__copyright {
+		width: 100%;
+		margin: 2px 0 0 0;
+	}
+
+	.main-footer__madeby {
+		font-size: 0.8em;
+		color: gray;
+	}
+
 
 
 

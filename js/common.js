@@ -31,3 +31,9 @@ $(".menu-btn__trigger").click(function() {
   $(".menu").toggleClass('main-dropdown');
   $("body").toggleClass('body-overflow');
 })
+
+$(".menu-link").click(function() {
+  $(".menu").toggleClass('menu-hide');
+  $(".menu").toggleClass('main-dropdown');
+  $("body").toggleClass('body-overflow');
+})
