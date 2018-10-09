@@ -3474,8 +3474,11 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-size: 1em;
 	}
 
+	/*============*/
+
 	.reviews {
     	padding: 78px 0 10px 0;
+    	padding: 78px 0 80px 0;
 	}
 
 	.reviews-title {
@@ -3486,10 +3489,21 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-size: 1em;
 		margin: 0 0 20px 0;
 	}
+	
+	.reviews-slider {
+		width: 95%;
+	}
+	
 	.reviews-slider__item {
 		flex-direction: column;
 	}
+	
+	.reviews-slider__photo {
+		margin: 10px auto;
+	}	
+
 	.reviews-slider__photo img {
+		display: block;
 		margin: 10px auto;
 	}
 
@@ -3503,9 +3517,25 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		text-align: justify;
 		line-height: 1.4;
 	}
-	.slick-prev,
+
+	.slick-slide {
+		margin: 10px;
+		width: 95%;
+	}
+
+
 	.slick-next {
-		right: -95px;
+		right: 20%;
+		
+	}
+
+	.slick-prev {
+		left: 25%;
+	}
+
+	.slick-next, 
+	.slick-prev {
+		top: 104%;
 	}
 
 
