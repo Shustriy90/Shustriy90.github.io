@@ -4164,6 +4164,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.main-footer__copyright {
 		width: 105%;
 		margin: 2px 0 0 0;
+		font-size: 12px;
 	}
 
 	.main-footer__madeby {
