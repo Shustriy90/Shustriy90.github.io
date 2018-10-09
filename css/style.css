@@ -2398,9 +2398,12 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 
 
+/*======================================================================*/
+
+
 @media screen and (max-width: 1199.98px) {
 	body {
-		width: 1196px;
+		/*width: 1196px;*/
 		width: 100%;
 	}
 
@@ -2479,6 +2482,24 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 
 }
+
+/*==============END========================*/
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+  
+}
+
+
+
+
+
+
+/*=================================================================*/
+
 
 @media screen and (max-width: 575.98px) {	
 	body {
@@ -2655,7 +2676,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 /*-----    dropdown ------*/
 .main-dropdown {
-position: fixed;
+	position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
@@ -2674,9 +2695,9 @@ position: fixed;
     /* right: 0; */
     overflow-x: hidden;
     overflow-y: auto;
-height: 100%;
-z-index: 20;
-top: 90px;
+	height: 100%;
+	z-index: 20;
+	top: 90px;
 
 }
 
@@ -3809,18 +3830,22 @@ top: 90px;
 @media screen and (max-width: 469.98px) {
 
 	.header-main {
-    padding: 15px 0 10px 0;
+	    /*padding: 15px 0 10px 0;*/
+	    padding: 0;
 	}
 	.header-top-wrapper {
-    width: 95%;
-    margin-top: 13px;
+    	width: 95%;
+	    /*margin-top: 13px;*/
+	    margin-top: 16px;
 	}
 	.header-info {
 		display: none;
 	}
 	.header-logo {
-		width: 190px;
-		height: 35px;
+/*		width: 190px;
+		height: 35px;*/
+		width: 160px;
+    	height: 30px;
 	}
 	.main-dropdown {
 		top: 75px;
@@ -3829,6 +3854,14 @@ top: 90px;
 		width: 100%;
     	padding: 20px 15px 0px 14px;
 	}
+
+	.menu-btn__trigger {
+		top: -3px;
+		width: 38px;
+    	height: 38px;
+	}
+
+
 	.advantages-first-header {
     	font-size: 1.4em;
     	margin-top: 20px;
