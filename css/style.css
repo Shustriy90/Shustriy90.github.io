@@ -3500,7 +3500,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		width: 100%;
 		font-size: 0.8em;
 		text-align: justify;
-
+		line-height: 1.4;
 	}
 	.slick-prev,
 	.slick-next {
@@ -3522,13 +3522,15 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 
 	.workplace-partners_logo {
-		width: 170px;
+		/*width: 170px;*/
+		width: 160px;
     	height: 160px;
 		margin: 15px;
 	}
 
 	.workplace-partners_logo:first-of-type {
-    margin-left: 15px;
+    	margin-left: 15px;
+    	margin-left: 3px;
 	}
 
 
