@@ -6,8 +6,10 @@ var num = 140; //number of pixels before modifying styles
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() >= num) {
         $('.menu').addClass('menu-dark');
+        $('.menu-list').addClass('menu-dark-list');
     } else {
         $('.menu').removeClass('menu-dark');
+        $('.menu-list').removeClass('menu-dark-list');
     }
 });
 
