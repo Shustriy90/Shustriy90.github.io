@@ -3534,7 +3534,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	
 	.reviews-slider__photo {
-		margin: 10px auto;
+		/*margin: 10px auto;*/
+		margin: 0px auto;
 	}	
 
 	.reviews-slider__photo img {
@@ -3550,7 +3551,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		width: 100%;
 		font-size: 0.8em;
 		text-align: justify;
-		line-height: 1.4;
+		/*line-height: 1.4;*/
+		line-height: 1.5;
 	}
 
 	.slick-slide {
