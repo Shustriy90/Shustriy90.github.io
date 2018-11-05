@@ -1426,12 +1426,6 @@ body {
 	font-weight: 600;
 }
 
-.reviews-subtitle {
-	display: block;
-	margin: 0 0 72px 0;
-	text-align: center;
-	font-size: 26px;
-}
 
 .reviews-slider {
 	/*width: 918px;*/
@@ -3529,10 +3523,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.reviews-title {
 		font-size: 1.3em;
 		line-height: 1.4;
-	}
-	.reviews-subtitle {
-		font-size: 1em;
-		margin: 0 0 20px 0;
 	}
 	
 	.reviews-slider {
