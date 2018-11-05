@@ -4085,6 +4085,12 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-size: 1em;
 	}
 
+	.programm-part_item {
+		font-size: 1em;
+	    margin-bottom: 15px;
+	    line-height: 1.4;
+	}
+
 /*--------LEVELS--------------------------*/
 
 	.levels {
