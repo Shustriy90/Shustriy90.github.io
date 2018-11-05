@@ -2930,7 +2930,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	color: #3b3b3b;
 	margin: 0;
 	font-family: "Montserrat", sans-serif;	
-	font-size: 0.7em;
+	font-size: 0.8em;
 	font-weight: 400;
 }
 
@@ -2948,7 +2948,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 .intriduction_about-html {
 	margin: 10px 0 0 0 ;	
-	font-size: 0.7em;
+	font-size: 0.8em;
 }
 
 
@@ -4212,6 +4212,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.slick-prev {
 		background-image: url(../img/slider/left-arrow-mobile.svg);
 		left: 2%;
+		z-index: 1;
 	}
 
 
