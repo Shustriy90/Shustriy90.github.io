@@ -422,7 +422,8 @@ body {
 	font-family: "Montserrat", sans-serif;	
 	font-size: 21px;
 	font-weight: 400;
-	font-style: italic;
+	/*font-style: italic;*/
+	text-align: justify;
 }
 
 /*--SKILLS--*/
