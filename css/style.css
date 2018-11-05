@@ -4202,6 +4202,30 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 
 
+
+
+
+	.slick-next {
+		background-image: url(../img/slider/right-arrow-mobile.svg);
+	    right: -5%;
+	    /*z-index: -1;*/
+	}
+
+	.slick-prev {
+		background-image: url(../img/slider/left-arrow-mobile.svg);
+		left: 0%;
+	}
+
+
+	.slick-next, .slick-prev {
+		top: 70%;
+	}
+
+
+
+
+
+
 	.workplace-partners_logo {
 		margin: 5px;
 	}
