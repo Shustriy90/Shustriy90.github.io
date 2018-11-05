@@ -4207,18 +4207,20 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 	.slick-next {
 		background-image: url(../img/slider/right-arrow-mobile.svg);
-	    right: -5%;
+	    right: -2%;
 	    /*z-index: -1;*/
 	}
 
 	.slick-prev {
 		background-image: url(../img/slider/left-arrow-mobile.svg);
-		left: 0%;
+		left: 2%;
 	}
 
 
 	.slick-next, .slick-prev {
-		top: 70%;
+		top: 45%;
+		width: 40px;
+		height: 40px;
 	}
 
 
