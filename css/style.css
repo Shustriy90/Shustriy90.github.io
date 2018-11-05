@@ -388,7 +388,7 @@ body {
 
 .intriduction_txt,
 .intriduction_about-html {
-		line-height: 1.5;
+		line-height: 1.55;
 		width: 45%;
 }
 
@@ -398,6 +398,7 @@ body {
 	font-family: "Montserrat", sans-serif;	
 	font-size: 21px;
 	font-weight: 400;
+	text-align: justify;
 }
 
 .intriduction_txt:after {
@@ -410,10 +411,10 @@ body {
 }
 
 
-.intriduction_txt:first-letter {
+/*.intriduction_txt:first-letter {
 	font-size: 30px;
 	font-weight: 400;
-}
+}*/
 
 .intriduction_about-html {
 	margin: 30px 0 0 0 ;
@@ -2921,7 +2922,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 .intriduction_txt,
 .intriduction_about-html {
-		line-height: 1.5;
+		line-height: 1.55;
 		width: 100%;
 }
 
@@ -2936,14 +2937,14 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 .intriduction_txt:after {
 	width: 98%;
 	margin-top: 10px;
-	border: 0.8px solid #c6c6c6;
+	border: 0.6px solid #c6c6c6;
 }
 
 
-.intriduction_txt:first-letter {
+/*.intriduction_txt:first-letter {
 	font-size: 30px;
 	font-weight: 400;
-}
+}*/
 
 .intriduction_about-html {
 	margin: 10px 0 0 0 ;	
