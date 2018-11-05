@@ -3456,7 +3456,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 
 	.new-advantages_title {
-		margin: 40px 0;
+		width: 90%;
+		margin: 40px auto;
 	    font-size: 1.3em;
 	    line-height: 1.3;
 	}
