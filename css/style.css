@@ -2536,7 +2536,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 /*==============END========================*/
 
 
-
+@import "tablet.css";
 
 
 
@@ -3701,6 +3701,10 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-weight: 500;
 	}
 
+	.prices-form__data-title {
+		margin: 10px auto 15px auto;
+	}
+
 
 	.privacy-agreement {
 		display: block;
@@ -4144,9 +4148,17 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-size: 0.9em;
 	}
 
+	
+	.teacher {
+		margin: 5px 0 20px 0;
+	}
 
+	.about-teacher {
+		padding: 70px 0 29px 0;
+	}
 
 	.about-teacher:before {
+		content: "Занятия ведет Преподаватель с десятилетним стажем";
 		width: 95%;
 		font-size: 1.2EM
 	}
