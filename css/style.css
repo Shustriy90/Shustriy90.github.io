@@ -3953,6 +3953,9 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
     	height: 38px;
 	}
 
+	.advantages {
+    	padding-top: 16%;
+	}
 
 	.advantages-first-header {
     	font-size: 1.4em;
