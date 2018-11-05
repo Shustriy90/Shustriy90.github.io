@@ -2425,6 +2425,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	margin: 0 0 5px 0;
 	font-size: 20px;
 	font-weight: 400;
+	text-decoration: none;
+	color: #4c4c4c;
 }
 
 .main-footer-info__link {
