@@ -4196,7 +4196,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 
 	.reviews {
-		padding: 70px 0 85px 0;
+		padding: 70px 0 5px 0;
 	}
 
 
@@ -4218,7 +4218,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 
 	.slick-next, .slick-prev {
-		top: 45%;
+		top: 40%;
 		width: 40px;
 		height: 40px;
 	}
