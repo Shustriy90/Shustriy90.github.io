@@ -3660,11 +3660,27 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		width: 90%;
 		padding: 15px 0px 15px 10px;
 		font-size: 1em;
+		position: relative;
 	}
 
 	.prices-form__course-name-title {
 		font-size: 1.2em;
 	}
+
+	.prices-form__course-name:after {
+			content: "";
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+			height: 1px;
+			background-color: #ded9d9;
+			/*background-color: red;*/
+			position: absolute;
+			top: 100%;
+			left: 0;
+			
+	}
+
 
 	.prices-form__course-check-title {
 		font-size: 1em;
@@ -3683,7 +3699,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		border-left: none;
 		position: relative;
 	}
-
+/*
 	.prices-form__data:before {
 		content: "";
 		display: block;
@@ -3695,7 +3711,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		top: -35px;
 		left: 0;
 		
-	}
+	}*/
 
 	.prices-form__date:before,
 	.prices-form__time:before {
@@ -4258,6 +4274,12 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-size: 0.85em;
 	}
 
+	.prices-form__course-name:after {
+	    width: 95%;
+	    left: 2.5%;
+	    right: 2.5%;		
+	}
+
 
 	.prices-form__course-check-text {
 		font-size: 0.75em;
@@ -4268,11 +4290,11 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		padding: 15px 25px 15px 25px;
 	}
 
-	.prices-form__data:before {
+/*	.prices-form__data:before {
 	    width: 95%;
 	    left: 2.5%;
 	    right: 2.5%;
-	}
+	}*/
 
 	.prices-form__summary {
 		padding: 30px 20px 30px 20px;
