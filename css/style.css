@@ -2483,6 +2483,13 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.advantages-second-header {
 		font-size: 26px;
 	}
+
+	.advantages-list {
+	    width: 95%;
+	}
+
+
+
 	.advantages-list-item {
 		margin-bottom: 45px;
 	}
