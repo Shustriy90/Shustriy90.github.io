@@ -3049,7 +3049,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 
 	.skills-list-item {
-	    width: 330px;
+	    /*width: 330px;*/
+	    width: 48%;
 	    font-size: 1.1em;
 	}
 
