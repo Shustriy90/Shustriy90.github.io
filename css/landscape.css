@@ -1,0 +1,171 @@
+@media screen and (max-width: 767.98px) {
+
+	body {
+		width: 100%;
+	}
+	.body-overflow {
+		overflow: hidden;
+	}
+
+	.header-top-wrapper {
+		width: 95%;
+	}
+
+	.header-text {
+		display: none;
+	}
+
+/*	.header-text--small {
+		font-size: 14px;
+		margin-left: 16px;
+	}
+
+	.header-text--big {
+		font-size: 28px;
+	}*/
+
+
+.header-info {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+
+
+
+/*----- кнопка для мобильного меню ------*/
+
+.menu-btn__trigger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    box-sizing: content-box;
+    width: 40px;
+    height: 40px;
+    padding: 15px 15px;
+    background: 0 0;
+    border: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
+.menu-btn__trigger > span {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    vertical-align: bottom;
+    background: #fff;
+    transition: background .3s .5s;
+}
+
+.menu-btn__trigger > span::after, 
+.menu-btn__trigger > span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transition: top .3s .3s,transform .3s;
+    transition: top .3s .3s,transform .3s,-webkit-transform .3s;
+}
+
+.menu-btn__trigger > span::before {
+    top: -10px;
+}
+.menu-btn__trigger > span::after {
+    top: 10px;
+}
+
+
+.show-menu-btn span {
+	background: transparent;
+}
+
+.show-menu-btn > span::after {
+    -webkit-transform: rotate3d(0,0,1,45deg);
+    transform: rotate3d(0,0,1,45deg);
+}
+
+.show-menu-btn > span::before  {
+    -webkit-transform: rotate3d(0,0,1,-45deg);
+    transform: rotate3d(0,0,1,-45deg);
+}
+.show-menu-btn > span::after, 
+.show-menu-btn > span::before {
+    top: 0;
+    transition: top .3s,transform .3s .5s;
+    transition: top .3s,transform .3s .5s,-webkit-transform .3s .5s;
+}
+
+
+
+
+
+
+
+
+
+/*----- // кнопка для мобильного меню ------*/
+
+.menu {
+	padding: 0;
+	visibility: hidden;
+	background-color: rgba(13, 10, 8, 1);
+	margin: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 12%;
+}
+
+/*-----    скрыть меню ------*/
+.menu-hide {
+	visibility: visible;
+	background-color: #1e2626;;
+}
+/*----- // скрыть меню ------*/
+
+/*-----    dropdown ------*/
+.main-dropdown {
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1e2626;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    overflow-y: auto;
+	height: 100%;
+	z-index: 20;
+	top: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
