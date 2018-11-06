@@ -3016,6 +3016,11 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	    width: 95%;
 	}
 
+	.advantages-list-item {
+    	font-size: 1em;
+    	font-weight: normal;
+	}
+
 
 	/*---intriduction----*/
 
