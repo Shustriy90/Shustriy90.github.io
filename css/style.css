@@ -1723,7 +1723,8 @@ body {
 }
 
 .prices-form {
-	width: 65%;
+	min-width: 65%;
+	max-width: 80%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -2140,6 +2141,7 @@ input[type="text"] {
 
 .rebate__terms {
 	width: 38%;
+	min-width: 38%;
 	margin: 0 auto 60px auto;
 	display: block;
 	font-size: 25px;
@@ -2918,7 +2920,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		/* background-color: orange; */
 		/* background: orange; */;
 		height: auto;
-		background-color: #1e2626;;;;;;;
+		background-color: #1e2626;
 
 	}
 
@@ -2955,7 +2957,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	    text-decoration: none
 	    background: #ff6300;
 	    border: 2px solid #ff6300;
-	    border: 2px solid #09a059;;
+	    border: 2px solid #09a059;
 	    border-radius: 5px;
 	    cursor: pointer;
 	    -webkit-transition: background 0.3s ease-out, border 0.3s ease-out, color 0.3s ease-out;
@@ -3046,6 +3048,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 	.intriduction_txt, .intriduction_about-html {
 	    font-size: 1.2em;
+	    font-size: 1em;
 	    width: 98%;
 	}
 
@@ -3149,6 +3152,16 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
     	width: 98%;
 	}
 
+	.programm-part_hint {
+		display: none;
+	}
+
+	.programm-part--first:hover .programm-part_hint,
+	.programm-part--second:hover .programm-part_hint,
+	.programm-part--third:hover .programm-part_hint {
+		display: none;
+	}
+
 
 	/*------------*/
 	
@@ -3238,6 +3251,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	    width: 70%;
 	    height: auto; 
 	    padding: 15px;
+	    border: 1px solid transparent;
 	    
 	}
 
@@ -3270,7 +3284,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.course-price__base {
 	    width: 95%;
 	    margin: 0 auto 20px auto;
-	    font-size: 10em;
+	    /*font-size: 10em;*/
+	    font-size: 8em;
 
         justify-content: flex-start;
     	align-items: flex-end;
@@ -3317,6 +3332,496 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	    width: 100%;
 	}
 
+	/*---------------------------*/
+	.new-advantages_title {
+	    width: 70%;
+	    margin: 60px auto 40px auto;
+	    font-size: 1.5em;
+	    line-height: 1.2em;
+	}
+
+	.new-advantages-list {
+		width: 95%;
+	    font-size: 1em;
+	    justify-content: center;
+	}
+
+
+	.new-advantages-item {
+	    width: 48%;
+        padding: 0 10px;
+        margin-bottom: 40px;
+	}
+
+	.new-advantages-item:nth-child(2) {
+	    flex-grow: 0;
+	    padding: 0;
+	}
+
+	.new-advantages-item:last-child {
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.new-advantages-item--first:before,
+	 {
+	    margin: 0 auto 10px auto;
+	}
+
+	/*--------------------*/
+	.about-teacher {
+		flex-wrap: wrap;
+	    padding: 100px 0 25px 0;
+		background-position: bottom;
+		background-size: 170%;
+		position: relative;
+		background-size: 100%;
+	}
+
+	.about-teacher:before {
+		content: "Занятия ведет Преподаватель с десятилетним стажем";
+		display: block;
+	    width: 80%;
+	    margin: 0 auto;
+	    font-size: 1.5em;
+    	text-align: center;
+	    font-family: "Montserrat", sans-serif;
+	    color: #ffffff;
+	    line-height: 1.4;
+		position: absolute;
+		top: 20px;
+		left: auto;
+		right: auto;
+	}
+	
+
+	.about-teacher img {
+		display: block;
+		position: relative;
+		margin: 0;
+	}
+
+	.about-teacher_title {
+		display: none;
+	}
+	.teacher {
+		margin: 20px 0 30px 0;
+		font-size: 1.3em;
+		text-align: center;
+	}
+	
+	.about-teacher_txt {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 1em;
+	}
+
+	/*============================*/
+	.reviews {
+		padding: 78px 0 2% 0;
+	}
+
+	.reviews-title {
+		font-size: 1.5em;
+	}
+
+	.reviews-slider {
+		width: 95%;
+	}
+	
+	.reviews-slider__item {
+		flex-direction: column;
+	}
+	
+	.reviews-slider__photo {
+		/*margin: 10px auto;*/
+		margin: 0px auto;
+	}	
+
+	.reviews-slider__photo img {
+		display: block;
+		margin: 10px auto;
+	}
+
+	.reviews-slider__photo span {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.reviews-slider__text {
+		/*width: 100%;*/
+	    width: 85%;
+		font-size: 1em;
+		text-align: justify;
+		/*line-height: 1.4;*/
+		line-height: 1.6;
+	}
+
+	.slick-slide {
+		margin: 10px;
+		width: 95%;
+	}
+
+
+/*	.slick-next {
+		right: 20%;
+		
+	}
+
+	.slick-prev {
+		left: 25%;
+	}
+
+	.slick-next, 
+	.slick-prev {
+		top: 106%;
+	}*/
+
+	.slick-next {
+		background-image: url(../img/slider/right-arrow-mobile.svg);
+	    /*right: -2%;*/
+	    right: -0.5%;
+	    /*z-index: -1;*/
+	}
+
+	.slick-prev {
+		background-image: url(../img/slider/left-arrow-mobile.svg);
+		left: 2%;
+		z-index: 1;
+	}
+
+
+	.slick-next, .slick-prev {
+		/*top: 40%;*/
+		top: 65%;
+		width: 40px;
+		height: 40px;
+	}
+
+
+	/*==================================*/
+	.workplace-partners {
+	    /*padding: 35px 0 20px 0;*/
+	    padding: 5% 5% 2% 5%;
+	}
+
+	.workplace-partners_title {
+	    margin: 0 0 15px 0;
+	    font-size: 1.5em;
+	}
+
+	.workplace-partners_txt {
+	    width: 85%;
+	    margin: 0 0 5px 0;
+	    font-size: 1.4em;
+	}
+
+	.workplace-partners_logo,
+	.workplace-partners_logo:first-of-type {
+	    height: 125px;
+	    margin: 0 10px;
+	    padding: 0;
+	}
+
+	/*===========================*/
+	.prices {
+		padding: 35px 30px 50px 30px;
+	}
+	.prices-title {
+	    margin: 0 0 32px 0;
+	    font-size: 1.5em;
+	}
+
+	.prices-form {
+	    /*width: 95%;*/
+	    min-width: 95%;
+	}
+
+	.prices-form__header {
+    	font-size: 0.8em;
+    }
+
+    .prices-form__header-wrapper {
+	    width: 30%;
+	}
+
+	.prices-form__header > div:nth-child(2) {
+		padding: 0 0 0 4%;
+	}
+
+	.prices-form__header > div:nth-child(1) > span:nth-child(2):before {
+		width: 38px;
+    	height: 25px;
+	}
+
+	.prices-form__header > div:nth-child(3) > span:nth-child(1):before {
+	    width: 30px;
+	    height: 27px;
+	}
+
+	.prices-form__course-name-title,
+	.prices-form__data-title {
+    	font-size: 1.1em;
+	}
+
+	.prices-form__course-name,
+	.prices-form__data {
+	    width: 48%;
+	}
+
+	.prices-form__course-name {
+		/*padding: 15px;*/
+		padding: 15px 15px 0px 15px;
+	}
+
+	.prices-form__course-check-title {
+		margin: 0 0 5px 0;
+	    font-size: 1em;
+	    line-height: 1.3;
+	}
+
+	.prices-form__course-check-text {
+	    font-size: 0.8em;
+	    line-height: 1.4;
+	}
+
+	.prices-form__data {
+		/*padding: 15px 20px 15px 30px;*/
+		padding: 15px 2% 15px 3%;
+	}
+
+	.prices-form__item {
+	    height: 45px;
+	    font-size: 1em;
+	}
+	
+	.prices-form__item::-webkit-input-placeholder {
+		font-size: 0.9em;
+	}
+	.prices-form__item::-moz-placeholder {
+		font-size: 0.9em;
+	}
+	.prices-form__item:-moz-placeholder {
+		font-size: 0.9em;
+	}
+	.prices-form__item:-ms-input-placeholder {
+		font-size: 0.9em;
+	}
+
+	.privacy-agreement {
+	    width: 100%;
+    	display: block;
+	}
+
+	.privacy-agreement a {
+		text-decoration: none;
+		color: #ee3000;
+	}
+
+	.privacy-agreement:hover a {
+		text-decoration: underline;
+		color: #ee3000;		
+	}
+
+	.privacy-agreement, .privacy-agreement a {
+	    font-size: 10px;
+        -webkit-hyphens: auto;
+	    -moz-hyphens: auto;
+	    -ms-hyphens: auto;
+	    hyphens: auto;
+	}
+
+	.prices-form__summary {
+	    width: 100%;
+	    padding: 2% 5%;
+	}
+
+	.prices-form__summary-btn {
+	    min-width: 180px;
+	    padding: 10px 20px;
+	}
+
+	/*=================================*/
+
+	.rebate {
+	    padding: 35px 20px;
+	}
+
+	.rebate__title {
+	    display: block;
+	    margin-bottom: 50px;
+	    font-size: 1.5em;
+	}
+	
+	.rebate__txt {
+	    min-width: 70%;
+	    max-width: 90%;
+        margin: 0 auto 50px auto;
+	    font-size: 1.3em;
+	}
+	
+	.rebate__terms {
+		min-width: 40%;
+	    max-width: 50%;
+	    margin: 0 auto 50px auto;
+	    line-height: 1.4em;
+	}
+
+	#rebate > p:nth-child(5) {
+		margin: 0;
+	}
+	
+	/*============================*/
+	.faq {
+		padding: 90px 5px 45px 5px;
+	}
+
+	.faq-title {
+	    font-size: 1.5em;
+	    margin: 0 0 30px 0;
+	}
+
+	.faq-txt {
+	    margin: 0 0 30px 0;
+	    font-size: 1.3em;
+	}
+
+	.faq-wrapper {
+		width: 93%;
+		flex-wrap: wrap;
+		padding: 0 0 40px 0;
+	}
+
+	.faq-details__wrapper {
+		min-width: 90%;
+    	max-width: 95%;
+		margin: 0 auto;
+		padding: 20px 0px 10px 0px;
+		border-right: none;
+		border-bottom: 1px solid #ded9d9;
+	}
+
+	.faq-form {
+		width: 100%;
+	}
+
+	.faq details {
+		width: 100%;
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+
+	.faq summary {
+		font-size: 1.2em;
+		line-height: 1.4;
+	}
+
+	.faq-form legend {
+		padding: 30px 0 0 0;
+		margin: 0 0 25px 0;
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+
+	.faq-form__item {
+		height: 45px;
+		width: 95%;
+		margin: 0 auto 10px auto;
+		font-size: 1em;
+	}
+
+	.faq-form__item::-webkit-input-placeholder {
+		font-size: 0.9em;
+	}
+	.faq-form__item::-moz-placeholder {
+		font-size: 0.9em;
+	}
+	.faq-form__item:-moz-placeholder {
+		font-size: 0.9em;
+	}
+	.faq-form__item:-ms-input-placeholder {
+		font-size: 0.9em;
+	}
+
+	.faq-form__btn {
+		padding: 10px 80px;
+	}
+
+	/*=======================================*/
+
+	.free-access {
+	    width: 100%;
+	    padding: 20px 20px 30px 20px;
+	}
+
+	.free-access__title {
+	    min-width: 59%;
+	    max-width: 95%;
+	    font-size: 1.5em;
+	}
+
+	.free-access__btn {
+	    max-width: 70%;
+	    min-width: 60%;
+	    height: auto; 
+	    padding: 15px;
+	}
+
+	.free-access__btn span {
+	    font-size: 1.1em;
+	}
+
+	/*================================*/
+
+	.main-footer {
+		flex-wrap: wrap;
+		padding: 20px 24px;
+		align-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.main-footer__logoinfo {
+		order: 1;
+		display: flex;
+    	flex-wrap: wrap;
+		width: 45%;
+		margin-top: 5px;
+	}
+
+
+	.main-footer__copyright {
+		width: 90%;
+		margin: 10px 0 0 0;
+		line-height: 1.4;
+	}
+
+
+	.main-footer__madeby {
+		display: none;
+
+	/*	order: 3;
+		width: 100%;
+		margin: -20px auto 5px auto;
+		text-align: center;
+		font-family: Arial;
+		font-style: italic;
+	    color: transparent;    
+	    -webkit-background-clip: text;
+	    background-clip: text;
+	    background-image: linear-gradient(90deg, red, orange, fuchsia); */
+	}
+
+	.main-footer-info {
+		order: 2;
+		width: 45%;
+		text-align: right;
+		line-height: 1.4;
+	}
+
+
+
+
+
 
 
 
@@ -3327,6 +3832,17 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3912,6 +4428,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 
 	.programm-part {
+
 	}
 
 	/*.programm-part:hover {
@@ -3919,7 +4436,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}*/
 
 	.programm-part--first {
-		margin: 0;
+		margin: 0 auto;
 	}
 
 	.programm-part--first:hover,
@@ -3960,13 +4477,13 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 	.programm-part--second {
 		/*margin-right: 29px;*/
-		margin: 5% 0 0 0;
+		margin: 7% auto 0 auto;
 	}
 
 	.programm-part--third {
 		align-self: flex-end;
 		/*margin: 10% 0 0 30%;*/
-		margin: 10% 0 10% 0;
+		margin: 7% auto 10% auto;
 		background-image: url(../img/programm/plane-pro.svg);
 	    background-repeat: no-repeat;
 	    background-size: 50%;
@@ -4028,11 +4545,11 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	/*--------LEVELS--------------------------*/
 
 	.levels {
+		margin: 0 0 5px 0;
 		padding: 10px 10px 20px 10px;
 		background: url(../img/faq/left-bgn.png) -300px center no-repeat;
 		background-color: #477cbf;
-		*/: ;
-		background-size: contain;;
+		background-size: contain;
 	}
 
 	.levels-title {
@@ -4044,7 +4561,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		width: 100%;
 		flex-wrap: wrap;
 		justify-content: center;
-		padding-top: 35px;
+		/*padding-top: 35px;*/
+		padding-top: 5px;
 	}
 
 	.level {
@@ -4287,6 +4805,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-size: 20px;
 	}
 	.new-advantages-item {
+		width: 95%;
 	    margin-bottom: 40px;
 	}
 	.new-advantages-item:last-child {
@@ -4472,6 +4991,11 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	/*========!!!!!!!!!!!!!!========*/
 
+	.prices-form__header > div:nth-child(3) > span:nth-child(1):before {
+		width: 25px;
+    	height: 25px;
+	}
+
 
 	.prices-form__course-name {
 		width: 90%;
@@ -4656,7 +5180,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 
 	.faq-form__item {
-		width: 95%;
+		width: 90%;
 		margin: 0 auto 10px auto;
 	}
 
@@ -4677,7 +5201,9 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 
 	.free-access__btn {
-		width: 90%;
+		/*width: 90%;*/
+	    max-width: 95%;
+	    min-width: 75%;
 		margin: 20px auto;
 	}
 
@@ -4708,6 +5234,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 
 	.main-footer__madeby {
+		display: block;
 		order: 3;
 		width: 100%;
 		margin: 35px auto 10px auto;
@@ -5129,8 +5656,14 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		padding: 35px 0 59px 0;
 	}
 
+	.free-access__title {
+	    margin: 0 auto 25px auto;
+	}
 
-
+	.free-access {
+	    width: 100%;
+	    padding: 20px 20px 20px 20px;
+	}
 
 	.free-access__btn span {
 	    font-size: 0.85em;
@@ -5139,7 +5672,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 
 	.main-footer {
-	    padding: 33px 20px 15px 20px;
+	    /*padding: 33px 20px 15px 20px;*/
+	    padding: 20px;
 	}
 
 	.main-footer-info {
@@ -5155,11 +5689,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		width: 105%;
 		margin: 2px 0 0 0;
 		font-size: 12px;
-	}
-
-	.main-footer__madeby {
-		font-size: 0.8em;
-		color: gray;
 	}
 
 
