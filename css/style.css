@@ -3113,7 +3113,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.menu-hide {
 		visibility: visible;
 		background-color: #1e2626;
-		;
 	}
 	/*----- // скрыть меню ------*/
 	/*-----    dropdown ------*/
@@ -3141,7 +3140,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		display: block
 		/* background-color: orange; */
 		/* background: orange; */
-		;
 		height: auto;
 		background-color: #1e2626;
 	}
@@ -3154,9 +3152,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		display: flex;
 		padding: 20px 15px 0px 15px;
 		width: 100%;
-		;
-		;
-		;
 	}
 	.menu-link {
 		-ms-align-items: center;
@@ -3496,7 +3491,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		justify-content: center;
 	}
 	.new-advantages-item {
-		width: 48%;
+		width: 49%;
 		padding: 0 10px;
 		margin-bottom: 40px;
 	}
