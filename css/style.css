@@ -5412,14 +5412,20 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	.slick-next,
 	.slick-prev {
-		top: 42%;
+		top: 40%;
 		width: 40px;
 		height: 40px;
 	}
+	/*========================*/
 	.workplace-partners_logo {
-		width: 145px;
+		/*width: 145px;*/
+		width: 45%;
 		margin: 5px;
 	}
+	.workplace-partners_logo:first-of-type {
+		margin: 5px;
+	}
+	/*========================*/
 	.price {
 		padding: 80px 5px 40px 5px;
 	}
