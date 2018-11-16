@@ -1362,6 +1362,9 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	justify-content: flex-start;
+	-ms-align-items: center;
+	align-items: center;
 	/*margin: 0 auto;*/
 	text-decoration: none;
 	-webkit-appearance: none;
@@ -1373,6 +1376,7 @@ body {
 }
 
 .course-price__btn span {
+	display: block;
 	margin: auto;
 	color: #09a059;
 	font-family: "Montserrat", sans-serif;
