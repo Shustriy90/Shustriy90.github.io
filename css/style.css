@@ -5430,11 +5430,13 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		padding: 80px 5px 40px 5px;
 	}
 	.prices-form__header-wrapper {
-		margin: 0 0 0 10px;
-	}
-	.prices-form__header>div:nth-child(1) {
+		/*margin: 0 0 0 10px;*/
+		width: 30%;
 		margin: 0;
-		width: 33%;
+	}
+	.prices-form__header>div:nth-child(2) {
+		width: 30%;
+		padding: 0 0 0 1%;
 	}
 	.prices-form__title:nth-of-type(2):before {
 		width: 40px;
@@ -5477,11 +5479,13 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		padding: 10px 20px;
 		font-size: 1.1em;
 	}
+	/*========================*/
 	.rebate__terms {
 		/*width: 80%;*/
 		min-width: 70%;
 		max-width: 90%;
 	}
+	/*========================*/
 	.faq {
 		padding: 35px 0 59px 0;
 	}
