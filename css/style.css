@@ -3412,6 +3412,21 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		width: 90%;
 		font-size: 1.2em;
 	}
+	/*===================*/
+	.cashback {
+		padding: 20px 20px 40px 20px;
+	}
+	.cashback-title {
+		width: 80%;
+		margin: 0 auto 20px auto;
+		font-size: 1.8em;
+	}
+	.cashback-txt {
+		width: 90%;
+		margin: 0 auto 60px auto;
+		font-size: 1.2em;
+		line-height: 1.4em;
+	}
 
 
 
