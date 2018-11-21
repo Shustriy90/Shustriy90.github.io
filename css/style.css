@@ -1169,7 +1169,7 @@ body {
 }
 
 .cashback-btn:hover {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	background-color: #d7f700;
 	/*	background-color: #0028f7;*/
 }
@@ -1585,8 +1585,11 @@ body {
 	height: 450px;
 	margin-right: 33px;
 	border-radius: 10px;
-	-webkit-filter: grayscale(1);
-	filter: grayscale(1);
+	-webkit-filter: grayscale(90%);
+	filter: grayscale(90%);
+}
+.about-teacher img:hover {
+	filter: grayscale(100%);
 }
 
 .about-teacher div {
@@ -3263,7 +3266,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 	/*==========*/
 	.skills {
-		padding: 85px 20px 20px 20px;
+		padding: 95px 20px 20px 20px;
 		background-size: 120%;
 		background-repeat: repeat-y;
 	}
@@ -3323,7 +3326,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	/*=============*/
 	.programm {
-		padding: 80px 20px 20px 20px;
+		padding: 95px 20px 20px 20px;
 		background-image: url(../img/programm/programm-section-background.png), 
 						  url(../img/programm/programm-dotted-line-base.svg), 
 						  url(../img/programm/programm-dotted-line-pro.svg);
@@ -3427,6 +3430,499 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-size: 1.2em;
 		line-height: 1.4em;
 	}
+	/*========================*/
+	.course-price {
+		padding: 20px;
+	}
+	.course-price__title {
+		width: 80%;
+		margin: 0 auto 30px auto;
+		font-size: 1.8em;
+		/*font-weight: 500;*/
+		line-height: 1.3em;
+	}
+	.course-price-wrapper {
+		flex-wrap: wrap;
+		margin: 0 0 50px 0;
+	}
+	.course-price__base {
+		width: 100%;
+		margin: 0 0 15px 0;
+		justify-content: flex-start;
+		align-items: flex-end;
+		font-size: 12em;
+	    /*line-height: 0.8em;*/
+	}
+	.course-price__base:after {
+		font-size: 0.5em;
+		line-height: 1.2em;
+	}
+	.course-price-next:last-child,
+	.course-price-next:nth-child(2) {
+		width: 45%;
+		margin: 0 10px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.course-price-next span:first-child {
+		font-size: 3.5em;
+	    margin: 0 0 3px 0;
+	}
+	.course-price-next span:nth-child(2) {
+		width: 100%;
+		/*font-size: 1.625em;*/
+		font-size: 1.25em;
+	}
+	.course-price-btn_wrapper {
+		/*width: 100%;*/
+		width: 90%;
+	}
+	
+	.course-price__btn {
+		box-sizing: border-box;
+		padding: 10px;
+	}
+	.course-price__btn span {
+		font-size: 1.3em;
+	}
+	.course-price__label {
+		box-sizing: border-box;
+		padding: 5px;
+		font-size: 1.3em;
+	}
+	.course-price__txt {
+		width: 100%;
+	}
+	/*===============*/
+	.new-advantages {
+		padding: 90px 20px 20px 20px;
+	}
+	.new-advantages_title {
+		margin: 10px auto 45px auto;
+		font-size: 1.8em;
+	}
+	.new-advantages-list {
+		width: 100%;
+		padding: 0;
+		justify-content: space-around;
+	}
+	.new-advantages-item {
+		width: 48%;
+		box-sizing: border-box;
+	    margin-bottom: 40px;
+	    /*padding: 10px;*/
+	    padding: 10px 30px;
+	    font-size: 0.7em;;
+	    line-height: 1.5;
+	}
+	.new-advantages-item:before {
+		width: 90px;
+		height: 90px;
+		margin: 0 auto 10px auto;
+	}
+	.new-advantages-item:last-child:before {
+		margin: 0 auto;
+	}
+	.new-advantages-item:nth-child(2) {
+		/*padding: 10px;*/
+		padding: 10px 30px;
+		flex-grow: 0;
+	}
+	.new-advantages-item:last-child {
+		margin: 0 auto;
+	}
+
+	/*============*/
+	.about-teacher {
+		padding: 40px 30px;
+		align-items: flex-start;
+	}
+	.about-teacher_title {
+		font-size: 1.3em;
+		line-height: 1.3em;
+	}
+	/*--figure--*/
+	.about-teacher-crop {
+		width: 70%;
+		height: 380px;
+		margin: 0 20px 0 0;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	.about-teacher img {
+		width: 100%;
+	    height: auto;
+	    margin: -8px 0 0 0px;
+	}
+	.teacher {
+		margin: 0 0 40px 0;
+    	font-size: 2em;
+	}
+	.about-teacher_txt {
+		margin: 0;
+		font-size: 1.2em;
+    	line-height: 1.3;
+    	text-align: justify;
+    	text-indent: 1.5em;
+	}
+	/*===========*/
+	.reviews {
+		padding: 95px 20px 20px 20px;
+	}
+	.reviews-title {
+		font-size: 1.8em;
+	}
+	.reviews-slider {
+		width: 95%;
+	}
+	.reviews-slider__item {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.reviews-slider__photo {
+		margin: 0px auto;
+	}
+	.reviews-slider__photo img {
+		display: block;
+		margin: 10px auto;
+	}
+	.reviews-slider__photo span {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.reviews-slider__text {
+		/*width: 100%;*/
+		/*width: 85%;*/
+		width: 90%;
+		font-size: 1em;
+		text-align: justify;
+		line-height: 1.6;
+	}
+	.slick-slide {
+		margin: 10px;
+		width: 95%;
+	}
+	.slick-next {
+		right: -4%;
+	}
+	.slick-prev {
+		/*left: 2%;*/
+		left: -2%;
+		z-index: 1;
+	}
+	.slick-next,
+	.slick-prev {
+		/*top: 65%;*/
+		top: 56%;
+		width: 40px;
+		height: 40px;
+	}
+
+
+
+	/*==================*/
+	.workplace-partners {
+		padding: 20px;
+	}
+	.workplace-partners_title {
+		font-size: 1.8em;
+	}
+	.workplace-partners_txt {
+		padding: 0 10%;
+		font-size: 1.3em;
+	}
+	.workplace-partners_logo,
+	.workplace-partners_logo:first-of-type {
+		margin: 0 20px;
+	}
+
+	/*===========*/
+	.prices {
+	    padding: 95px 20px 40px 20px;
+	}
+	.prices-title {
+		font-size: 1.8em;
+	}
+	.prices-form {
+	    max-width: 100%;
+	}
+	.prices-form__header {
+		font-size: 0.8em;
+	}
+	.prices-form__header-wrapper {
+		width: 30%;
+	}
+	.prices-form__header>div:nth-child(2) {
+		padding: 0 0 0 4%;
+	}
+	.prices-form__header>div:nth-child(1)>span:nth-child(2):before {
+		width: 32px;
+		height: 25px;
+	}
+	.prices-form__header>div:nth-child(3)>span:nth-child(1):before {
+		width: 27px;
+		height: 27px;
+	}
+	.prices-form__course-name-title,
+	.prices-form__data-title {
+		font-size: 1.1em;
+	}
+	.prices-form__course-name,
+	.prices-form__data {
+		width: 48%;
+	}
+	.prices-form__course-name {
+		/*padding: 15px;*/
+		padding: 15px 15px 0px 15px;
+	}
+	.prices-form__course-check-title {
+		margin: 0 0 5px 0;
+		font-size: 1em;
+		line-height: 1.3;
+	}
+	.prices-form__course-check-text {
+		font-size: 0.8em;
+		line-height: 1.4;
+	}
+	.prices-form__data {
+		/*padding: 15px 20px 15px 30px;*/
+		padding: 15px 2% 15px 3%;
+	}
+	.prices-form__item {
+		height: 45px;
+		font-size: 1em;
+	}
+	.prices-form__item::-webkit-input-placeholder {
+		font-size: 0.9em;
+	}
+	.prices-form__item::-moz-placeholder {
+		font-size: 0.9em;
+	}
+	.prices-form__item:-moz-placeholder {
+		font-size: 0.9em;
+	}
+	.prices-form__item:-ms-input-placeholder {
+		font-size: 0.9em;
+	}
+	.privacy-agreement {
+		width: 100%;
+		display: block;
+	}
+	.privacy-agreement a {
+		padding: 0;
+		text-decoration: none;
+		color: #ee3000;
+	}
+	.privacy-agreement:hover a {
+		text-decoration: underline;
+		color: #ee3000;
+	}
+	.privacy-agreement,
+	.privacy-agreement a {
+		font-size: 10px;
+		-webkit-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+	}
+	.prices-form__summary {
+		width: 100%;
+		padding: 2% 5%;
+	}
+	.prices-form__summary-btn {
+		min-width: 180px;
+		padding: 10px 20px;
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*=============*/
+	.rebate {
+		padding: 20px;
+	}
+	.rebate__title {
+		margin-bottom: 65px;
+		font-size: 1.8em;
+	}
+	.rebate__txt,
+	.rebate__terms {
+		font-size: 1.4em;
+		line-height: 1.3em;
+	}
+	.rebate__txt {
+		width: 90%;
+		margin: 0 auto 25px auto;
+	}
+	.rebate__terms {
+		margin: 0 auto 45px auto;
+		line-height: 1.3em;
+	}
+	/*=========*/
+	.faq {
+		/*padding: 95px 20px 20px 20px;*/
+		padding: 95px 20px 35px 20px;
+	}
+	.faq-title {
+		margin: 0 0 25px 0;
+		font-size: 1.8em;
+	}
+	.faq-txt {
+		margin: 0 0 35px 0;
+		font-size: 1.4em;
+	}
+	.faq-wrapper {
+		width: 100%;
+		padding: 20px 10px;
+		border-radius: 10px;
+	}
+	.faq-details__wrapper {
+	    width: 59%; 
+	}
+	.faq details {
+		width: 100%;
+		margin: 0 auto 20px auto;
+		font-size: 0.9em;
+		line-height: 1.4em;
+	}
+	.faq summary {
+	    margin: 0 0 15px 0;
+	    font-size: 1.2em;
+	    line-height: 1.35em;
+	}
+	.faq-form {
+	    width: 40%;
+	}
+	.faq-form fieldset {
+	    padding: 0 0 0 2%;
+	    margin: 0 0 10px 0;
+	}
+	.faq-form legend {
+		font-size: 1.25em;
+		line-height: 1.35em;
+	}
+	.faq-form__item {
+	    width: 95%;
+	}
+
+	.faq-form__item::-webkit-input-placeholder {
+		font-size: 0.9em;
+	}
+	.faq-form__item::-moz-placeholder {
+		font-size: 0.9em;
+	}
+	.faq-form__item:-moz-placeholder {
+		font-size: 0.9em;
+	}
+	.faq-form__item:-ms-input-placeholder {
+		font-size: 0.9em;
+	}
+	/*========*/
+	.free-access {
+		/*padding: 20px;*/
+		padding: 20px 20px 25px 20px;
+		background-size: 35%;
+	}
+	.free-access__title {
+		font-size: 1.8em;
+	}
+	.free-access__btn {
+		height: auto;
+		padding: 20px;
+		max-width: 60%;
+	}
+	.free-access__btn span {
+		font-size: 1em;
+	}
+	/*========*/
+	.main-footer {
+		padding: 20px;
+	}
+	.main-footer__logoinfo {
+	    /*width: 30%;*/
+	    width: 22%;
+	    flex-wrap: wrap;
+	    justify-content: flex-start;
+	}
+	.main-footer__copyright {
+	    margin: 5px 0 0 0;
+	}
+	.main-footer-info__phone {
+    	font-size: 1em;
+    }
+    .main-footer-info__link {
+    	font-size: 0.8em;
+    }
+    .main-footer__madeby {
+	    text-align: center;
+	    font-size: 0.8em;
+	    line-height: 1.2em;
+	    font-family: Arial;
+	    font-style: italic;
+	    color: transparent;
+	    -webkit-background-clip: text;
+	    background-clip: text;
+	    background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(orange), to(fuchsia));
+	    background-image: -webkit-linear-gradient(left, red, orange, fuchsia);
+	    background-image: -o-linear-gradient(left, red, orange, fuchsia);
+	    background-image: linear-gradient(90deg, red, orange, fuchsia);
+	}
+
+
+
+
+
 
 
 
@@ -3463,7 +3959,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.header-top-wrapper_logo {
 		position: absolute;
 		top: 20px;
-		left: 20px;
+		left: 7px;
 	}
 	.header-text {
 		display: none;
@@ -3781,7 +4277,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-size: 1em;
 	}
 	.main-goal-portfolio {
-		width: 75%;
+		width: 85%;
 		height: 75%;
 	}
 	.main-goal-bonus {
@@ -3947,6 +4443,10 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.course-price-next span:nth-child(2) {
 		font-size: 1.2em;
 	}
+	.course-price-next:last-child, 
+	.course-price-next:nth-child(2) {
+    	width: 40%;
+	}
 	.course-price-btn_wrapper {
 		width: 100%;
 	}
@@ -3963,7 +4463,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	/*---------------------------*/
 	.new-advantages_title {
 		width: 70%;
-		margin: 60px auto 40px auto;
+		/*margin: 60px auto 40px auto;*/
+		margin: 0px auto 40px auto;
 		font-size: 1.5em;
 		line-height: 1.2em;
 	}
@@ -3978,6 +4479,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		width: 49%;
 		padding: 0 10px;
 		margin-bottom: 40px;
+		font-size: 1em;
 	}
 	.new-advantages-item:nth-child(2) {
 		-webkit-box-flex: 0;
@@ -4018,10 +4520,19 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		left: auto;
 		right: auto;
 	}
+	.about-teacher-crop {
+	    width: 60%;
+	    height: 470px;
+	    margin: 0 auto;
+	    /*border-radius: 50%;*/
+	    border-radius: 10px;
+	}
 	.about-teacher img {
+		/*width: 85%;*/
+		width: 100%;
 		display: block;
 		position: relative;
-		margin: 0;
+		margin: 0 auto;
 	}
 	.about-teacher_title {
 		display: none;
@@ -4118,9 +4629,11 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-size: 1.5em;
 	}
 	.workplace-partners_txt {
-		width: 85%;
+		width: 95%;
 		margin: 0 0 5px 0;
+    	padding: 0;
 		font-size: 1.4em;
+
 	}
 	.workplace-partners_logo,
 	.workplace-partners_logo:first-of-type {
@@ -4129,7 +4642,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		padding: 0;
 	}
 	/*===========================*/
-	.prices {
+	/*	.prices {
 		padding: 35px 30px 50px 30px;
 	}
 	.prices-title {
@@ -4137,7 +4650,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-size: 1.5em;
 	}
 	.prices-form {
-		/*width: 95%;*/
 		min-width: 95%;
 	}
 	.prices-form__header {
@@ -4166,7 +4678,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		width: 48%;
 	}
 	.prices-form__course-name {
-		/*padding: 15px;*/
 		padding: 15px 15px 0px 15px;
 	}
 	.prices-form__course-check-title {
@@ -4179,7 +4690,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		line-height: 1.4;
 	}
 	.prices-form__data {
-		/*padding: 15px 20px 15px 30px;*/
 		padding: 15px 2% 15px 3%;
 	}
 	.prices-form__item {
@@ -4224,7 +4734,113 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.prices-form__summary-btn {
 		min-width: 180px;
 		padding: 10px 20px;
+	}*/
+
+
+
+	.prices-form {
+		width: 95%;
 	}
+	.prices-form__title,
+	.prices-form__date,
+	.prices-form__time {
+		position: relative;
+		margin: 0 0 15px 0px;
+	}
+	.prices-form__time {
+		margin: 0 0 15px 35px;
+	}
+	.prices-form__time:before {
+		position: absolute;
+		top: 0;
+		left: -35px;
+	}
+	.prices-form__header {
+		font-size: 0.70em;
+	}
+	/*========!!!!!!!!!!!!!!========*/
+	.prices-form__header>div:nth-child(2) {
+		width: 33%;
+	}
+	/*========!!!!!!!!!!!!!!========*/
+	.prices-form__header>div:nth-child(3)>span:nth-child(1):before {
+		width: 25px;
+		height: 25px;
+	}
+	.prices-form__course-name {
+		width: 90%;
+		padding: 15px 0px 15px 10px;
+		font-size: 1em;
+		position: relative;
+	}
+	.prices-form__course-name-title {
+		font-size: 1.2em;
+	}
+	.prices-form__course-name:after {
+		content: "";
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		height: 1px;
+		background-color: #ded9d9;
+		/*background-color: red;*/
+		position: absolute;
+		top: 100%;
+		left: 0;
+	}
+	.prices-form__course-check-title {
+		font-size: 1em;
+		margin-bottom: 10px;
+	}
+	.prices-form__course-check-text {
+		font-size: 0.8em;
+	}
+	.prices-form__data {
+		width: 95%;
+		margin-top: 25px;
+		padding: 15px 30px 15px 30px;
+		border-left: none;
+		position: relative;
+	}
+	.prices-form__date:before,
+	.prices-form__time:before {
+		margin: 0 10px 0 0;
+	}
+	.prices-form__title:first-of-type:before,
+	.prices-form__title:nth-of-type(2):before,
+	.prices-form__title:last-of-type:before {
+		margin: 0 10px 0 0;
+	}
+	.prices-form__course-name-title,
+	.prices-form__data-title {
+		font-weight: 500;
+	}
+	.prices-form__data-title {
+		margin: 10px auto 15px auto;
+	}
+	.privacy-agreement {
+		display: block;
+		margin: 10px 0 0 0;
+		text-indent: 25px;
+		line-height: 1.6;
+		text-align: justify;
+	}
+	.privacy-agreement,
+	.privacy-agreement a {
+		padding-left: 0;
+	}
+	.prices-form__summary {
+		margin: 10px 0 0 0;
+		padding: 30px 20px 30px 40px;
+	}
+	.prices-form__summary-btn {
+		padding: 10px 40px;
+	}
+
+
+	
+
+
 	/*=================================*/
 	.rebate {
 		padding: 35px 20px;
@@ -4266,6 +4882,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		padding: 0 0 40px 0;
+		border-radius: 0;
 	}
 	.faq-details__wrapper {
 		min-width: 90%;
@@ -4325,7 +4942,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-size: 1.5em;
 	}
 	.free-access__btn {
-		max-width: 70%;
+		max-width: 85%;
 		min-width: 60%;
 		height: auto;
 		padding: 15px;
@@ -4358,8 +4975,9 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	.main-footer__copyright {
 		width: 90%;
-		margin: 10px 0 0 0;
+		margin: 5px 0 0 0;
 		line-height: 1.4;
+	    font-size: 12px;
 	}
 	.main-footer__madeby {
 		display: none;
@@ -4382,6 +5000,13 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		text-align: right;
 		line-height: 1.4;
 	}
+	.main-footer-info__phone {
+		margin: 0;
+	}
+	.main-footer-info__link {
+		font-size: 12px;
+	}
+	
 }
 
 
@@ -4397,7 +5022,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.header-main {
 		width: 100%;
 		/*padding: 15px 0;*/
-		padding: 15px 0;
+		/*padding: 15px 0;*/
+		padding: 12px 0;
 		background-color: #1e2626;
 		position: fixed;
 		z-index: 2;
@@ -4407,25 +5033,19 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		margin: 0 auto;
 	}
 	.header-top-wrapper_logo {
-		position: static;
+		width: 30%;
+		position: absolute;
+		/*top: 25px;*/
+		top: 20px;
+		left: 7px;
+	}
+	.header-logo {
+		width: 100%;
 	}
 	.header-text {
 		display: none;
-		/* margin: 0; */
-		/* font-family: 'Exo 2', sans-serif; */
-		/* color:  #ffffff; */
-		/* font-weight: 300; */
-		/* text-align: left; */
-		/* align-self: center; */
-		;
 	}
-	.header-text--small {
-		font-size: 14px;
-		margin-left: 16px;
-	}
-	.header-text--big {
-		font-size: 28px;
-	}
+
 	.header-info {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -4433,25 +5053,26 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
-		margin: auto 18% auto 0;
-		;
+		margin: 0 auto;
+		font-size: 0.8em;
 	}
 	.header-info_txt {
 		display: block;
 		font-family: 'Exo 2', sans-serif;
 		color: #ffffff;
 		text-align: left;
+		font-size: 1em;
 	}
 	.header-info_txt--email {
-		font-size: 122%;
+		font-size: 1em;
 	}
 	.header-info_txt--tel {
-		font-size: 20px;
-		margin: 9px 0 5px 0;
+		font-size: 1.35em;
+	    margin: 5px 0;
 	}
 	.header-info_txt--link {
 		color: #fefefe;
-		font-size: 12px;
+		font-size: 0.9em;
 		text-decoration: underline;
 	}
 	.header-info_txt--link:hover {
@@ -4464,6 +5085,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.menu-btn__trigger {
 		position: absolute;
 		top: 10px;
+		top: 0;
 		right: 10px;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -4610,15 +5232,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		display: block
 		/* background-color: orange; */
 		/* background: orange; */
-		;
 		height: auto;
 		background-color: #1e2626;
-		;
-		;
-		;
-		;
-		;
-		;
 	}
 	.menu-item {
 		-webkit-box-pack: center;
@@ -4629,9 +5244,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		display: flex;
 		padding: 20px 15px 0px 15px;
 		width: 100%;
-		;
-		;
-		;
 	}
 	.menu-link {
 		-ms-align-items: center;
@@ -4808,16 +5420,14 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		background-size: cover;
 		width: 100%;
 		padding: 5px;
-		;
+		background-size: 120%;
 		/* padding-top: 85px; */
 		/* padding-bottom: 54px; */
-		;
 	}
 	.skills-header {
 		margin: 10px 0 30px 0;
 		font-size: 1.3em;
 		padding: 0 8px;
-		;
 	}
 	.skills-list {
 		/*width: 1027px;
@@ -4834,10 +5444,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		flex-grow: 1;
 		/* color: #3b3b3b; */
 		/* text-align: center; */
-		;
 		/* color: #3b3b3b; */
 		/* text-align: center; */
-		;
 	}
 	.skills-list-item--first:before {
 		width: 177px;
@@ -5065,7 +5673,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	.level img {
 		margin-bottom: 15px;
-		;
 	}
 	.level-link {
 		font-size: 1.5em;
@@ -5127,7 +5734,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		border: 1px solid transparent;
 	}
 	.cashback-btn:hover {
-		border: 1px solid black;
+		/*border: 1px solid black;*/
 		background-color: #d7f700;
 		/*	background-color: #0028f7;*/
 	}
@@ -5274,9 +5881,11 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		margin-left: 0;
 	}
 	.about-teacher {
+		box-sizing: border-box;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 127px 0 29px 0;
+		/*padding: 127px 0 29px 0;*/
+	    padding: 100px 0 30px 0;
 		background-position: bottom;
 		background-size: 170%;
 		position: relative;
@@ -5284,7 +5893,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.about-teacher:before {
 		content: "Занятия ведет Преподаватель с Большой буквы";
 		display: block;
-		width: 100%;
+		width: 90%;
 		font-size: 1.3em;
 		text-align: center;
 		font-family: "Montserrat", sans-serif;
@@ -5292,9 +5901,16 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		line-height: 1.4;
 		position: absolute;
 		top: 20px;
-		left: 10px;
+		left: auto;
+		right: auto;
+	}
+	.about-teacher-crop {
+		width: 70%;
+    	height: auto;
+    	/*height: 420px;*/
 	}
 	.about-teacher img {
+		width: 100%;
 		display: block;
 		position: relative;
 		margin: 0;
@@ -5316,7 +5932,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	/*============*/
 	.reviews {
 		/*padding: 78px 0 10px 0;*/
-		padding: 78px 0 85px 0;
+		/*padding: 78px 0 85px 0;*/
+		padding: 78px 0 10px 0;
 	}
 	.reviews-title {
 		font-size: 1.3em;
@@ -5355,14 +5972,14 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		width: 95%;
 	}
 	.slick-next {
-		right: 20%;
+		right: 5%;
 	}
 	.slick-prev {
-		left: 25%;
+		left: 10%;
 	}
 	.slick-next,
 	.slick-prev {
-		top: 106%;
+		top: 45%;
 	}
 	.workplace-partners_title {
 		font-size: 1.3em;
@@ -5380,6 +5997,9 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		height: 110px;
 		/*margin: 15px;*/
 		margin: 0 15px 0 15px;
+	}
+	.workplace-partners_logo:hover {
+		border: 1px dashed transparent;
 	}
 	.workplace-partners_logo:first-of-type {
 		margin-left: 15px;
@@ -5588,32 +6208,25 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		min-width: 75%;
 		margin: 20px auto;
 	}
+	/*============*/
 	.main-footer {
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		padding: 33px 25px 15px 25px;
-		-ms-flex-line-pack: start;
-		align-content: flex-start;
-		-webkit-box-align: start;
-		-ms-flex-align: start;
-		align-items: flex-start;
+		padding: 20px;
 	}
-	.main-footer__logoinfo {
-		-webkit-box-ordinal-group: 2;
-		-ms-flex-order: 1;
-		order: 1;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		width: 45%;
-		margin-top: 5px;
+	.main-footer-info {
+		margin-top: 8px;
+	}
+	.main-footer-info__phone {
+		font-size: 0.9em;
+		margin-bottom: 4px;
+	}
+	.header-logo-footer {
+	    width: 160px;
+	    height: 30px;
 	}
 	.main-footer__copyright {
-		width: 90%;
-		margin: 10px 0 0 0;
-		line-height: 1.4;
+		width: 105%;
+		margin: 2px 0 0 0;
+		font-size: 12px;
 	}
 	.main-footer__madeby {
 		display: block;
@@ -5621,8 +6234,9 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		-ms-flex-order: 3;
 		order: 3;
 		width: 100%;
-		margin: 35px auto 10px auto;
+		margin: 15px auto 0 auto;
 		text-align: center;
+		font-size: 0.8em;
 		font-family: Arial;
 		font-style: italic;
 		color: transparent;
@@ -5633,14 +6247,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		background-image: -o-linear-gradient(left, red, orange, fuchsia);
 		background-image: linear-gradient(90deg, red, orange, fuchsia);
 	}
-	.main-footer-info {
-		-webkit-box-ordinal-group: 3;
-		-ms-flex-order: 2;
-		order: 2;
-		width: 45%;
-		text-align: right;
-		line-height: 1.4;
-	}
+
+
 }
 
 
@@ -5650,12 +6258,16 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.header-main {
 		/*padding: 15px 0 10px 0;*/
 		/*padding: 0;*/
-		padding: 0 0 12px 0;
+		/*padding: 0 0 12px 0;*/
+		padding: 0 0 40px 0;
 	}
 	.header-top-wrapper {
 		width: 95%;
 		/*margin-top: 13px;*/
 		margin-top: 16px;
+	}
+	.header-top-wrapper_logo {
+	    top: 13px;
 	}
 	.header-info {
 		display: none;
@@ -5667,14 +6279,15 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		height: 30px;
 	}
 	.main-dropdown {
-		top: 60px;
+		top: 50px;
 	}
 	.menu-item {
 		width: 100%;
 		padding: 20px 15px 0px 14px;
 	}
 	.menu-btn__trigger {
-		top: -3px;
+		/*top: -3px;*/
+		top: -7px;
 		width: 38px;
 		height: 38px;
 	}
@@ -5697,7 +6310,9 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		margin: 0 auto 10px auto;
 	}
 	.introduction {
-		padding: 20px;
+		/*padding: 20px;*/
+		padding: 20px 25px;
+    	text-indent: 1.5em;
 	}
 	.intriduction_txt:after {
 		width: 100%;
@@ -5713,11 +6328,19 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		margin: 10px 0 25px 0;
 		font-size: 1.2em;
 	}
-	.skills-list-item {
+	/*	.skills-list-item {
 		font-size: 0.7em;
 		margin-bottom: 25px;
 		padding: 0 4px;
 		width: 48%;
+	}*/
+	.skills-list-item {
+ 		width: 48%;
+	    margin-bottom: 25px;
+	    padding: 0 30px;
+	    box-sizing: border-box;
+   	    font-size: 0.88em;
+	    line-height: 1.5em;
 	}
 	.skills-list-item--first:before {
 		width: 150px;
@@ -5850,14 +6473,31 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.course-price__btn span {
 		font-size: 0.9em;
 	}
+	/*================*/
 	.new-advantages {
-		padding: 30px 5px 5px 5px;
+		padding: 30px 5px 40px 5px;
 	}
 	.new-advantages-item {
 		width: 100%;
 		line-height: 1.4;
 		font-size: 0.9em;
 	}
+	.new-advantages-item--first:before {
+		width: 60px;
+		height: 111px;
+	}
+	.new-advantages-item--second:before,
+	.new-advantages-item--third:before,
+	.new-advantages-item--fourth:before {
+		width: 111px;
+		height: 111px;
+	}
+	.new-advantages-item--fifth:before {
+		width: 130px;
+		height: 111px;
+	}
+
+	/*===============*/
 	.teacher {
 		margin: 5px 0 20px 0;
 	}
@@ -5867,7 +6507,12 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.about-teacher:before {
 		content: "Занятия ведет Преподаватель с десятилетним стажем";
 		width: 95%;
-		font-size: 1.2EM
+		font-size: 1.2em;
+	}
+	.about-teacher-crop {
+	    width: 85%;
+	    margin: 0 auto;
+	    height: auto;
 	}
 	.about-teacher img {
 		width: 80%;
@@ -5905,9 +6550,14 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.workplace-partners_logo:first-of-type {
 		margin: 5px;
 	}
+	.workplace-partners_logo:hover {
+	    -webkit-filter: saturate(10);
+	    filter: saturate(10);
+	    border: 1px solid transparent;
+	}
 	/*========================*/
-	.price {
-		padding: 80px 5px 40px 5px;
+	.prices {
+		padding: 70px 5px 40px 5px;
 	}
 	.prices-form__header {
 	    padding: 2px;
@@ -5999,3 +6649,17 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-size: 12px;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
