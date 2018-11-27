@@ -2506,6 +2506,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 }
 
 .faq summary {
+	display: block;
 	margin: 0 0 15px 0;
 	font-size: 22px;
 	font-style: normal;
@@ -2514,7 +2515,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 }
 
 .faq summary::-webkit-details-marker {
-	display: none
+	display: none;
 }
 
 .faq-form {
