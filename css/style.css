@@ -2776,12 +2776,476 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 /*======================================================================*/
 @media screen and (max-width: 1799.98px) {
-		body {
+	body {
 		width: 100%;
 	}
-/*	.body-overflow {
-		overflow: hidden;
+		.header-main {
+		padding: 15px 18px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+	.header-top-wrapper {
+	    width: 75%;
+	}
+	.header-top-wrapper_logo {
+	    max-width: 200px;
+	}
+	.header-text--small {
+	    font-size: 0.9em;
+	    margin: 5px 0 0 0;
+	}
+	.header-main {
+	    width: 100%;
+	    padding: 15px 0 10px 0;
+	}
+	/*==================*/
+	.menu {
+	/*		max-width: 80%;
+	    min-width: 70%;*/
+	    width: 78%;
+	    height: auto;
+	}
+	.menu-link {
+		font-size: 1.2em;
+	}
+	.menu-link__buy {
+	    padding: 5px 15px;
+	}
+	.menu-link__buy span {
+	    font-size: 0.75em;
+	}
+	.menu-dark {
+		width: 100%;
+		padding: 10px;
+	}
+	.menu-dark:before {
+	    margin: 0 5% 0 0;
+    	height: 23px;
+	}
+	.menu-dark .menu-link__buy {
+	    min-width: 170px;
+	    height: auto;
+	    padding: 10px 20px;
+	    font-size: 1.2em;
+	}
+	.menu-dark .menu-link__buy {
+	    /*margin: 0 0 0 5%;*/
+	    margin: 0 5% 0 5%;
+	}
+	/*===========*/
+	.advantages {
+	    padding-top: 14%;
+	}
+	.advantages-first-header {
+	    font-size: 3em;
+	}
+	.advantages-second-header {
+	    font-size: 1.7em;
+	}
+	.advantages-list {
+	    /*width: 75%;*/
+	    width: 80%;
+	}
+	.advantages-list-item {
+		box-sizing: border-box;
+	    padding: 0 20px;
+	    margin-bottom: 5%;
+	}
+	.introduction {
+		/*padding: 40px;*/
+		padding: 40px 30px;
+		background-position: center right 20px;
+	    background-size: 33%;
+	}
+	.intriduction_txt, 
+	.intriduction_about-html {
+	    width: 65%;
+	    font-size: 1.1em;
+	}
+	.intriduction_about-html {
+	    margin: 20px 0 0 0;
+	}
+
+	.intriduction_txt:after {
+		width: 100%;
+    	margin-top: 20px;
+	    border: 0.5px solid #c6c6c6;
+	}
+	/*==========*/
+	.skills {
+		padding: 85px 20px 50px 20px;
+	    background-repeat: repeat;
+    	background-size: 100%;
+	}
+	.skills-list {
+		justify-content: space-around;
+	}
+	.skills-list-item--second {
+	    -webkit-box-flex: 0;
+	    -ms-flex-positive: 0;
+	    flex-grow: 0;
+	    padding: 0;
+	}
+    .skills-list-item:last-child{
+    	margin-bottom: 0;
+    }
+    /*==================*/
+    .main-goal {
+    	padding: 45px 20px 40px 20px;
+    }
+    .main-goal-header {
+	    margin: 0 0 40px 0;
+	}
+    .main-goal-txt {
+	    width: 70%;
+	    margin: 20px auto;
+	}
+	.main-goal-txt--width {
+		/*width: 80%;*/
+		margin: 20px auto 40px auto;
+	}
+	.main-goal-portfolio {
+	    width: 65%;
+	}
+	.main-goal-bonus {
+	    margin: 25px 0 0 0;
+	    font-size: 1.5em;
+	}
+	/*===========*/
+	.programm {
+	   /* background-position: center, 62% 23%, 87% 70%;
+	    background-size: 90%, 40%, 26%;
+	    background-position: center, 50% 23%, 90% 70%;
+    	background-size: 90%, 40%, 35%;*/
+	    /*background-position: center, 63% 28%, 98% 70%;*/
+	    background-position: center, 68% 30%, 98% 70%;
+    	background-size: 90%, 43%, 35%;
+    	padding: 80px 25px 80px 25px;
+	}
+
+	.programm-part_title {
+	    margin: 0 0 25px 0;
+    	padding: 0 0 15px 0;
+	    justify-content: flex-start;
+	    font-size: 1.15em;
+	}
+	.programm-part .programm-part_title:before {
+		margin: 0 15px 0 0;
+	}
+	.programm-part_item {
+	    font-size: 1em;
+	    /*font-size: 1.15em;
+	    margin-bottom: 20px;*/
+	    font-size: 1em;
+		margin-bottom: 18px;
+	}
+	.programm-part_list {
+		padding: 0 0 0 5px;
+	}
+	.programm-part--first {
+		width: 37%;
+		margin: 0 0 0 2%;
+	}
+	.programm-part--second {
+	    /* margin-right: 29px; */
+	    width: 37%;
+	    margin: 30% 3% 0 0;
+	}
+	.programm-part--third {
+	    width: 55%;
+	    margin: 10% 0 0 11%;
+        background-size: 50%;
+	    background-position-x: 480px;
+	    background-position-y: 88%;
+	}
+	.programm-part--first .programm-part_hint,
+	.programm-part--second .programm-part_hint, 
+	.programm-part--third .programm-part_hint {
+	    width: 195px;
+	    padding: 0 5px;
+	    font-size: 0.9em;
+	    top: -15px;
+	}
+	.programm-part--first .programm-part_hint, 
+	.programm-part--third .programm-part_hint {
+		left: 100%;
+	}
+	/*.programm-part--second:hover 
+	.programm-part_hint {
+	    width: 195px;
+    	font-size: 0.9em;
+   		top: -14px;
+    	padding: 0 5px;
 	}*/
+
+
+
+
+	/*================*/
+	.levels {
+		padding: 45px 20px 40px 20px;
+	    background: url(../img/faq/left-bgn.png) center left -9% no-repeat, url(../img/faq/right-bgn.png) right center no-repeat;
+	    background-color: #477cbf;
+	    background-size: 30%, 15%;
+	}
+	.levels-header {
+		margin: 65px auto 25px auto;
+		font-size: 2em;
+	}
+	.levels-txt {
+	    font-size: 1.3em;
+	}
+	/*====================*/
+	.cashback {
+		padding: 45px 20px 40px 20px;
+	}
+	.cashback-title {
+	    margin-bottom: 60px;
+	    font-size: 2em;
+	}
+	.cashback-txt {
+	    font-size: 1.4em;
+	    line-height: 1.55; 
+	}
+	.cashback-btn {
+	    width: 520px;
+	    height: auto;
+	    padding: 20px; 
+	}
+	.cashback-btn span {
+		font-size: 1.2em;
+	}
+	/*==================*/
+	.course-price {
+		/*padding: 65px 20px 30px 20px;*/
+		padding: 65px 40px 30px 40px;
+	}
+	.course-price__title {
+	    font-size: 2.4em;
+	}
+	.course-price-wrapper {
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.course-price__base {
+		width: 60%;
+		margin: 0;
+		/*font-size: 10em;*/
+		font-size: 15vw;
+		/*line-height: 120px;*/
+		justify-content: flex-start;
+	}
+	.course-price__base:after {
+		margin: 0;
+		align-self: flex-end;
+		/*font-size: 0.7em;*/
+		font-size: 11vw;
+		/*line-height: 80px;*/
+	}
+	.course-price-next {
+		/*width: 10%;*/
+		width: 16%;
+	}
+	.course-price-next:nth-child(2),
+	.course-price-next:last-child {
+	    margin: 0 1%;
+	}
+	.course-price-next span:first-child {
+		/*font-size: 3.125em;*/
+		font-size: 4vw;
+	}
+	.course-price-next span:nth-child(2) {
+    	/*font-size: 1.325em;*/
+    	font-size: 1.5vw;
+	}
+	.course-price-btn_wrapper {
+	    width: 70%;
+	    align-items: stretch;
+	}
+	.course-price__btn, 
+	.course-price__label {
+	    box-sizing: border-box;
+	    padding: 10px 20px;
+	    line-height: 1.5em;
+	}
+	.course-price__label {
+	    font-size: 1.35em;
+		line-height: 1.2em;
+	}
+	.course-price__btn {
+		width: 65%;
+		border: 2px dotted transparent;
+		padding: 10px 10px 10px 18px;
+    	line-height: 1.55em;
+	}
+	.course-price__btn span {
+		font-size: 1.8vw;
+	}
+	.course-price__label { 
+		width: 35%;
+	    /*font-size: 1.5vw;*/
+	}
+	.course-price__txt {
+	    width: 70%;
+	}
+	/*===============*/
+	.new-advantages-list {
+	    width: 80%;
+	    justify-content: space-around;
+	}
+	.new-advantages-item:nth-child(2) {
+	    -webkit-box-flex: 0;
+	    -ms-flex-positive: 0;
+	    flex-grow: 0;
+	    padding: 0;
+	}
+	.new-advantages-list {
+	    font-size: 1.2em;
+	}
+	.new-advantages-item:last-child {
+	    margin-left: 0;
+	}
+	/*========teacher==========*/
+	
+
+	/*==========*/
+	/*.reviews {
+		padding: 75px 20px 20px 20px;
+	}
+	.reviews-title {
+		font-size: 1.8em;
+	}*/
+	.reviews-slider {
+		width: 88%;
+	}
+	/*.reviews-slider__item {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}*/
+	.reviews-slider__photo {
+		margin: 0 auto 0 0;
+	}
+	.reviews-slider__photo img {
+		display: block;
+		margin: 10px auto;
+	}
+	.reviews-slider__photo span {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.reviews-slider__text {
+		width: 80%;
+		font-size: 1.15em;
+		text-indent: 40px;
+		text-align: justify;
+		line-height: 1.6;
+	}
+	.slick-slide {
+		margin: 10px;
+		width: 95%;
+	}
+	.slick-next {
+		right: -6%;
+	}
+	.slick-prev {
+		left: -5%;
+		z-index: 1;
+	}
+	.slick-next,
+	.slick-prev {
+		top: 56%;
+		width: 40px;
+		height: 40px;
+	}
+	/*======================*/
+	.prices-form {
+	    min-width: 65%;
+	    max-width: 90%;
+	}
+	/*======================*/
+	.rebate {
+		padding: 45px 20px 40px 20px;
+	}
+	.rebate__txt {
+		margin: 0 auto;
+	}
+	.rebate__terms {
+		margin: 0 auto 45px auto;
+		font-weight: normal;
+	    line-height: 1.5;
+	}
+	.rebate__title {
+	    margin-bottom: 45px;
+	}
+
+	.rebate__txt,
+	.rebate__terms {
+		font-size: 1.4em;
+	}
+	/*====================*/
+	.faq-wrapper {
+	    width: 90%;
+	    padding: 30px 10px 40px 0px;
+	}
+	.faq-details__wrapper {
+	    width: 60%;
+	    padding: 0px 10px 10px 10px;
+	}
+	.faq-form legend {
+	    padding: 0 0 0 0;
+	}
+	.faq details {
+	    width: 90%;
+	}
+	.faq details:nth-child(6),
+	.faq details:nth-child(6) > summary {
+		margin-bottom: 0;
+	}
+	/*=============*/
+	.free-access {
+		background-size: 55%;
+	}
+	.free-access__btn {
+	    width: 530px;
+	    height: 80px;
+	    height: auto;
+	    padding: 20px;
+	}
+
+
+
+
+
+
+	/*=============*/
+	.main-footer {
+	    padding: 33px 15% 33px 15%;
+	}
+	.main-footer__madeby {
+	    text-align: center;
+	    font-size: 0.95em;
+	    line-height: 1.2em;
+	    font-family: Arial;
+	    font-style: italic;
+	    color: transparent;
+	    -webkit-background-clip: text;
+	    background-clip: text;
+	    background-image: -webkit-gradient(linear, left top, right top, from(red), color-stop(orange), to(fuchsia));
+	    background-image: -webkit-linear-gradient(left, red, orange, fuchsia);
+	    background-image: -o-linear-gradient(left, red, orange, fuchsia);
+	    background-image: linear-gradient(90deg, red, orange, fuchsia);
+	}
+    
+
+
+
+
+
+	
 
 
 
@@ -2836,7 +3300,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	/*=======================*/
 	.menu {
-		width: 100%;
+		/*width: 100%;*/
+	    width: 88%;
 		height: auto;
 		margin: 25px auto 0 auto;
 		/*padding: 0 10px;*/
@@ -2844,7 +3309,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	.menu-link {
 		/*font-size: 1.2em;*/
-		font-size: 1em;
+		font-size: 1.15em;
 	}
 	.menu-link__buy {
 		height: auto;
@@ -2852,6 +3317,12 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		/*font-size: 1em;*/
 		font-size: 0.8em;
 		font-weight: bold;
+	}
+	.menu-link__buy span {
+	    font-size: 1em;
+	}
+	.menu-dark {
+		width: 100%;
 	}
 	.menu-dark {
 		max-width: 100%;
@@ -2873,10 +3344,12 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.menu-dark .menu-link__buy {
 		min-width: 150px;
 		height: auto;
-		/*padding: 10px;*/
-		padding: 7px 2px;
 		margin: 0 0 0 10px;
-		font-size: 0.8em;
+		padding: 10px 20px;
+		/*padding: 10px;*/
+		/*padding: 7px 2px;*/
+		font-size: 1em;
+		/*font-size: 0.8em;*/
 		font-weight: bold;
 	}
 	.menu-dark .menu-link__buy span {
@@ -3158,6 +3631,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.course-price__txt {
 	    width: 70%;
 	}
+	/*=================*/
 	.new-advantages {
 		padding: 20px;
 	}
@@ -3310,12 +3784,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		padding: 35px 20px 20px 20px;
 	}
 	.rebate__title {
-		margin-bottom: 60px;
+		margin-bottom: 35px;
 		font-size: 2em;
-	}
-	.rebate__txt {
-		font-size: 1.5em;
-		margin: 0 auto 40px auto;
 	}
 	.rebate__terms {
 	    width: 50%;
@@ -3324,7 +3794,9 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	    font-size: 1.5em;
 	}
 	.rebate__txt {
-	    font-size: 1.5em;
+		width: 70%;
+		margin: 0 auto 40px auto;
+		font-size: 1.3em;
 	}
 	/*==============*/
 	.faq {
@@ -3342,11 +3814,20 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	.faq details {
 		font-size: 1.1em;
+		text-align: justify;
 	}
 	.faq summary {
 		margin: 0 0 10px 0;
 		font-size: 1.2em;
 		line-height: 1.25em;
+	}
+	.faq-form fieldset {
+	    border: none;
+	    padding: 0;
+	    width: 100%;
+	}
+	.faq-form__item {
+	    width: 85%;
 	}
 	/*===============*/
 	.free-access {
@@ -4262,6 +4743,9 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	.prices-form__header-wrapper {
 		width: 30%;
+	}
+	.prices-form__header-wrapper:nth-child(1) {
+	    padding: 0;
 	}
 	.prices-form__header>div:nth-child(2) {
 		padding: 0 0 0 4%;
