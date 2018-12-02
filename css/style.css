@@ -3353,7 +3353,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		font-weight: bold;
 	}
 	.menu-dark .menu-link__buy span {
-		margin: 0;
+		margin: 0 auto;
 	}
 	/*====================*/
 	
@@ -4207,6 +4207,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	/*----- // скрыть меню ------*/
 	/*-----    dropdown ------*/
 	.main-dropdown {
+		width: 100%;
 		position: fixed;
 		right: 0;
 		bottom: 0;
