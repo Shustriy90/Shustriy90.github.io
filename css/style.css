@@ -7488,6 +7488,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	.advantages-list-item {
 		margin-bottom: 25px;
+		padding: 0;
 		width: 48%;
 		font-size: 0.8em;
 	}
@@ -7560,7 +7561,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	.main-goal {
 		padding: 5px 10px 15px 10px;
-		;
 	}
 	.main-goal-header {
 		margin: 10px 0 15px 0;
@@ -7602,19 +7602,22 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		line-height: 1.4;
 	}
 	/*--------LEVELS--------------------------*/
+	.level {
+	    margin: 0 0 5px 0;
+	}
+	.level:last-child {
+	    margin: 0 0 40px 0;
+	}
 	.levels {
 		padding: 10px 10px 20px 10px;
+		/*background: url(../img/faq/right-bgn.png) repeat;*/
+		background-color: #477cbf;
+	    background-size: 8%;
+
 	}
 	.levels-title {
+		width: 90%;
 		font-size: 1.2em;
-		;
-	}
-	.level-wrapper {}
-	.level {
-		;
-	}
-	.level img {
-		;
 	}
 	.level-link {
 		font-size: 1.3em;
@@ -7622,7 +7625,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.level-link:hover .level-link_title {
 		text-decoration: underline;
 	}
-	.level-link_title {}
 	.level-link_subtitle {
 		/*ПРОВЕРИТЬ НАЧЕРТАНИЕ!!!!!*/
 	}
@@ -7633,11 +7635,27 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	.levels-txt {
 		font-size: 0.8em;
-		;
+	}
+	/*======================*/
+	.cashback {
+	    padding: 25px 10px 35px 10px;
+	}
+	.cashback-title {
+		width: 95%;
+	    margin-bottom: 40px;
 	}
 	.cashback-btn {
 		padding: 10px 0;
 	}
+	.cashback-btn span {
+	    font-size: 0.8em;
+	    padding: 5px 0;
+	}
+	.cashback-txt {
+		margin: 0 auto 60px auto;
+	    font-size: 1em;
+	}
+	/*====================*/
 	.course-price {
 		padding: 20px 10px 35px 10px;
 	}
@@ -7656,6 +7674,9 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.course-price-next span:first-child:after {
 		font-size: 0.6em;
 	}
+	.course-price__btn {
+		padding: 5px 10px; 
+	}
 	.course-price__btn span {
 		font-size: 0.9em;
 	}
@@ -7666,9 +7687,9 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.new-advantages-item {
 		width: 100%;
 		line-height: 1.4;
-		font-size: 0.9em;
+		font-size: 0.8em;
 	}
-	.new-advantages-item--first:before {
+/*	.new-advantages-item--first:before {
 		width: 60px;
 		height: 111px;
 	}
@@ -7681,6 +7702,24 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	.new-advantages-item--fifth:before {
 		width: 130px;
 		height: 111px;
+	}*/
+
+	.new-advantages-item--first:before {
+	    width: 50px;
+	    height: 91px;
+	}
+	.new-advantages-item--second:before,
+	.new-advantages-item--third:before,
+	.new-advantages-item--fourth:before {
+	    width: 91px;
+	    height: 91px;
+	}
+	.new-advantages-item--fifth:before {
+	    width: 112px;
+	    height: 91px;
+	}
+	.new-advantages-item:last-child:before {
+	    margin: 0 auto 10px auto;
 	}
 
 	/*===============*/
@@ -7801,13 +7840,37 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	/*========================*/
 	.rebate__terms {
 		/*width: 80%;*/
-		min-width: 70%;
+		min-width: 85%;
 		max-width: 90%;
+	}
+	.rebate__txt, 
+	.rebate__terms {
+		margin: 0 auto 5px auto;
+	    font-size: 0.95em;
+	    line-height: 1.3em;
+	}
+	.rebate__txt:nth-child(2):after, 
+	.rebate__terms:after {
+	    margin: 10px auto;
+	}
+	#rebate>p:nth-child(5) {
+    	margin: 40px auto 0 auto;
+    	font-size: 0.8em;
 	}
 	/*========================*/
 	.faq {
 		padding: 35px 0 59px 0;
 	}
+	.faq summary, 
+	.faq details:nth-child(6) > summary {
+		margin: 0 0 15px 0;
+		font-size: 1.2em;
+	}
+
+
+
+
+	/*=============*/
 	.free-access__title {
 		margin: 0 auto 25px auto;
 	}
