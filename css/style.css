@@ -5383,20 +5383,25 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	/*------*/
 	/*---advantages----*/
 	.advantages {
-		padding-top: 10%;
+		padding-top: 13%;
 	}
 	.advantages-first-header {
 		margin: 20px 0 20px 0;
-		font-size: 2.5em;
+		/*font-size: 2.5em;*/
+	    font-size: 2.2em;
+    	line-height: 1.3em;
 	}
 	.advantages-second-header {
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
 	.advantages-list {
-		width: 95%;
+		/*width: 95%;*/
+		width: 100%;
 	}
 	.advantages-list-item {
-		font-size: 1em;
+		margin: 0 0 30px 0;
+		padding: 0 10px;
+		font-size: 0.95em;
 		font-weight: normal;
 	}
 	/*---intriduction----*/
@@ -5407,13 +5412,18 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	.intriduction_txt,
 	.intriduction_about-html {
-		font-size: 1.2em;
-		font-size: 1em;
+		/*font-size: 1.2em;*/
+		font-size: 0.9em;
 		width: 98%;
+	}
+	.intriduction_about-html {
+		margin: 0 auto;
 	}
 	.intriduction_txt:after {
 		width: 45%;
+		border: none;
 	}
+
 	/*---skills----*/
 	.skills {
 		background-repeat: repeat-y;
@@ -5429,7 +5439,8 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		/*width: 46%;*/
 		/*font-size: 1.1em;*/
 		/*font-size: 1em;*/
-		font-size: 0.85em;
+		/*font-size: 0.85em;*/
+		font-size: 0.9em;
 	}
 
 
@@ -6557,7 +6568,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	/*------*/
 	.advantages {
-		padding-top: 25%;
+		padding-top: 20%;
 		background-size: cover;
 		background-position: center;
 		;
@@ -6576,7 +6587,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 	}
 	.advantages-list-item {
 		margin-bottom: 30px;
-		font-size: 0.7em;
+		font-size: 0.8em;
 		/* Approximation due to font substitution */
 		font-weight: 400;
 		line-height: 1.3;
@@ -6659,7 +6670,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		/* color: #3b3b3b; */
 		/* text-align: center; */
 	}
-/*	.skills-list-item--first:before {
+	/*	.skills-list-item--first:before {
 		width: 177px;
 		margin: 0 auto 10px auto;
 		height: 162px;
@@ -6693,7 +6704,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		margin-bottom: 15px;
 	}*/
 
-/*	.skills-list-item--first:before {
+	/*	.skills-list-item--first:before {
 			width: 150px;
 			height: 150px;
 			margin: 0 auto;
@@ -7569,12 +7580,6 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 
 
 
-
-
-
-
-
-
 /*=================================================================*/
 
 @media screen and (max-width: 469.98px) {
@@ -7859,7 +7864,7 @@ url('../img/faq/left-bgn.png') center left no-repeat fixed,
 		line-height: 1.4;
 		font-size: 0.8em;
 	}
-/*	.new-advantages-item--first:before {
+	/*	.new-advantages-item--first:before {
 		width: 60px;
 		height: 111px;
 	}
