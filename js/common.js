@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('.reviews-slider').slick();
 });
 
-var num = 170; //number of pixels before modifying styles
+var num = 160; //number of pixels before modifying styles
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() >= num) {
         $('.menu').addClass('menu-dark');
