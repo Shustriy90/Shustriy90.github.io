@@ -184,7 +184,6 @@ body {
 }
 
 .menu {
-	/*width: 45%;*/
 	width: 50%;
 	height: 60px;
 	margin: 16px auto 0 auto;
@@ -204,7 +203,6 @@ body {
 }
 
 .menu-item {
-	/*width: 30%;*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -343,7 +341,6 @@ body {
 .menu-btn__trigger {
 	display: none;
 }
-
 
 /*------*/
 
@@ -990,7 +987,6 @@ body {
 .level-link_subtitle {
 	font-size: 20px;
 	font-weight: 400;
-	/*ПРОВЕРИТЬ НАЧЕРТАНИЕ!!!!!*/
 }
 
 .levels-header {
@@ -1010,7 +1006,6 @@ body {
 	font-size: 25px;
 	font-weight: 400;
 }
-
 
 /*--------cashback------------*/
 
@@ -1158,10 +1153,6 @@ body {
 	font-size: 140px;
 }
 
-/*.course-price-next {
-	color: #deefe5;
-}*/
-
 .course-price-next {
 	width: 25%;
 	color: #deefe5;
@@ -1171,7 +1162,6 @@ body {
 	margin: 0 0 10px 0;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 4.125em;
-	/*color: #deefe5;*/
 }
 
 .course-price-next span:nth-child(2) {
@@ -1190,24 +1180,17 @@ body {
 
 .course-price-next:last-child {
 	margin: 0 0 0 30px;
-	/*background: -webkit-gradient(linear, left top, right top, color-stop(33%, #deefe5), color-stop(86%, #09a059), to(#09a059));
-	background: -webkit-linear-gradient(left, #deefe5 33%, #09a059 86%, #09a059);
-	background: -o-linear-gradient(left, #deefe5 33%, #09a059 86%, #09a059);
-	background: linear-gradient(90deg, #deefe5 33%, #09a059 86%, #09a059);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;*/
-
-   background-color: rgb(255, 255, 255);
-   background: -webkit-gradient(linear, left top, right top, from(white), color-stop(transparent), color-stop(transparent));
-   background: -webkit-linear-gradient(left rgb(255, 255, 255), transparent, transparent);
-   background: -moz-linear-gradient(left rgb(255, 255, 255), transparent, transparent); 
-   background: -o-linear-gradient(left rgb(255, 255, 255), transparent, transparent);
-   background: linear-gradient(to right, rgb(255, 255, 255), transparent, transparent);
+    background-color: rgb(255, 255, 255);
+    background: -webkit-gradient(linear, left top, right top, from(white), color-stop(transparent), color-stop(transparent));
+    background: -webkit-linear-gradient(left rgb(255, 255, 255), transparent, transparent);
+    background: -moz-linear-gradient(left rgb(255, 255, 255), transparent, transparent); 
+    background: -o-linear-gradient(left rgb(255, 255, 255), transparent, transparent);
+    background: linear-gradient(to right, rgb(255, 255, 255), transparent, transparent);
    -webkit-text-fill-color: transparent;
-   -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+   -webkit-text-fill-color: rgba(255, 255, 255, 0.3);
    -webkit-background-clip: text;
-   -webkit-mask-image: linear-gradient(#fff, rgb(255, 255, 255, 0.8));
-   color: #deefe5;
+   -webkit-mask-image: linear-gradient(#fff, rgba(255, 255, 255, 0.8));
+    color: #deefe5;
 }
 
 .course-price-btn_wrapper {
@@ -1334,7 +1317,6 @@ body {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	/*padding-top: 16px;*/
 	padding-top: 25px;
 	padding-bottom: 10px;
 	color: #3b3b3b;
@@ -1501,8 +1483,6 @@ body {
 	font-size: 23px;
 	line-height: 1.4;
 }
-
-
 /*----отзывы - reviews------*/
 
 .reviews {
@@ -1770,7 +1750,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: 90%;
 	background-position: center;
-	/*обрати внимание*/
 	border-radius: 50%;
 	border: 1px dashed transparent;
 	width: 160px;
@@ -2229,7 +2208,7 @@ input[type="text"] {
 
 .rebate {
 	width: 100%;
-	padding: 45px 0 69px 0;
+	padding: 45px 0 30px 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2252,17 +2231,48 @@ input[type="text"] {
 
 .rebate__title {
 	display: block;
-	margin-bottom: 80px;
+	margin: 0 0 50px 0;
 	font-size: 35px;
 	font-weight: 500;
 }
 
-.rebate__txt {
-	width: 50%;
-	margin: 0 auto 60px auto;
-	font-size: 25px;
-	font-weight: 400;
-	line-height: 1.5;
+.rebate__list {
+	min-width: 50%;
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	text-align: left;
+}
+
+.rebate__list-item {
+	padding: 18px 0;
+	font-size: 1.6vw;
+	line-height: 1.3em;
+	position: relative;
+}
+
+.rebate__list-item:before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/rebate/rebate-tick.svg);
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 13px;
+    left: -38px;
+}
+
+.rebate__list-item span {
+	font-size: 1vw;
+}
+
+.rebate__comment {
+	margin: 50px 0 0 0;
+	font-size: 1em;
 }
 
 .rebate__txt-link {
@@ -2272,15 +2282,6 @@ input[type="text"] {
 .rebate__txt-link:hover {
 	color: #3a9ada;
 	cursor: pointer;
-}
-
-.rebate__terms {
-	width: 38%;
-	min-width: 38%;
-	margin: 0 auto 60px auto;
-	display: block;
-	font-size: 25px;
-	font-weight: 500;
 }
 
 
@@ -2458,7 +2459,6 @@ input[type="text"] {
 	border-color: #f25a06;
 }
 
-
 /*-----free-access--------*/
 
 .free-access {
@@ -2529,7 +2529,6 @@ input[type="text"] {
 	text-transform: uppercase;
 }
 
-
 /*-----footer------*/
 
 .main-footer {
@@ -2596,7 +2595,6 @@ input[type="text"] {
 	color: #ffffff;
 }
 
-
 /*======================================================================*/
 @media screen and (max-width: 1799.98px) {
 	body {
@@ -2638,6 +2636,7 @@ input[type="text"] {
 	}
 	.menu-link__buy span {
 	    font-size: 0.75em;
+	    font-weight: bold;
 	}
 	.menu-dark {
 		width: 100%;
@@ -2729,10 +2728,7 @@ input[type="text"] {
 	    -webkit-box-flex: 0;
 	    -ms-flex-positive: 0;
 	    flex-grow: 0;
-	    /*padding: 0;*/
 	    padding: 0 10px;
-
-	    /*margin: 0 5%;*/
 	}
     .skills-list-item:last-child{
     	margin-bottom: 0;
@@ -2817,7 +2813,6 @@ input[type="text"] {
 	    width: 195px;
 	    padding: 0 5px;
 	    font-size: 0.9em;
-	    /*top: -15px;*/
 	}
 	.programm-part--first .programm-part_hint, 
 	.programm-part--third .programm-part_hint {
@@ -3148,12 +3143,6 @@ input[type="text"] {
 		width: 100%;
 	}
 	.programm {
-/*        background-position: center, 65% 24%, 87% 80%;
-    	background-size: 100%, 55%, 38%;
-
-    	background-position: center, 65% 24%, 100% 80%;
-    	background-size: 100%, 55%, 50%;*/
-
 	    background-position: center, 65% 24%, 98% 80%;
     	background-size: 100%, 50%, 45%;
 	}
@@ -3162,11 +3151,10 @@ input[type="text"] {
 
 /*===========(max-width: 1199.98px)============================================*/
 
-@media screen and (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
 	body {
 		width: 100%;
 	}
-
 	.header-main {
 		padding: 15px 18px;
 		position: absolute;
@@ -3241,6 +3229,7 @@ input[type="text"] {
 	}
 	.menu-dark .menu-link__buy span {
 		margin: 0 auto;
+		font-size: 0.875em;
 	}
 	/*====================*/
 	
@@ -3316,7 +3305,6 @@ input[type="text"] {
 	    -webkit-box-flex: 0;
 	    -ms-flex-positive: 0;
 	    flex-grow: 0;
-	    /*padding: 0;*/
 	    padding: 0 20px;
 	}
 	.skills-list-item--first:before, 
@@ -3403,7 +3391,6 @@ input[type="text"] {
 		width: 50%;
 	}
 	.programm-part--first {
-		/*height: 390px;*/
 		margin: 0 0 35px 2%;
 	}
 	.programm-part--first:hover .programm-part_hint,
@@ -3666,10 +3653,6 @@ input[type="text"] {
 	    font-size: 1.3em;
 	    margin: 0 0 15px 0;
 	}
-	/*.workplace-partners_logo:first-of-type,
-	.workplace-partners_logo {
-	    margin: 0 20px;
-	}*/
 	/*==============*/
 	.prices {
 		padding: 85px 30px 40px 30px;
@@ -3735,31 +3718,20 @@ input[type="text"] {
 		padding: 35px 20px 20px 20px;
 	}
 	.rebate__title {
-		margin-bottom: 35px;
+		margin: 0 0 35px 0;
 		font-size: 2em;
 	}
-	.rebate__terms {
-	    width: 50%;
-	    min-width: 38%;
-	    margin: 0 auto 0 auto;
-	    font-size: 1.2em;
+	.rebate__list-item {
+		padding: 15px 0;
+	    font-size: 2.1vw;
 	}
-	.rebate__txt {
-		width: 70%;
-		margin: 0 auto 0 auto;
-		font-size: 1.2em;
+	.rebate__list-item:before {
+		width: 25px;
+    	height: 25px;
+    	top: 10px;
+    	left: -32px;
 	}
-
-	.rebate__txt:nth-child(2):after,
-	.rebate__terms:after {
-		content: "";
-		display: block;
-		width: 60%;
-		height: 1px;
-		margin: 15px auto;
-		background-color: white;
-	}
-	.rebate p:last-child {
+	.rebate__comment {
 		margin: 45px auto 0 auto;
 		font-size: 0.8em;
 	}
@@ -4041,7 +4013,7 @@ input[type="text"] {
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
-		display: block
+		display: block;
 		height: auto;
 		background-color: #1e2626;
 	}
@@ -4664,24 +4636,21 @@ input[type="text"] {
 	}
 	/*=============*/
 	.rebate {
-		padding: 20px;
+		padding: 30px 20px 25px 20px;
 	}
 	.rebate__title {
-		margin-bottom: 65px;
+		margin: 0 0 35px 0;
 		font-size: 1.8em;
 	}
-	.rebate__txt,
-	.rebate__terms {
-		font-size: 1.4em;
-		line-height: 1.3em;
+	.rebate__list-item {
+	    padding: 13px 0;
+	    font-size: 2.3vw;
 	}
-	.rebate__txt {
-		width: 90%;
-		margin: 0 auto 25px auto;
-	}
-	.rebate__terms {
-		margin: 0 auto 45px auto;
-		line-height: 1.3em;
+	.rebate__list-item:before {
+	    width: 25px;
+	    height: 25px;
+	    top: 10px;
+	    left: -30px;
 	}
 	/*=========*/
 	.faq {
@@ -4962,7 +4931,7 @@ input[type="text"] {
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
-		display: block
+		display: block;
 		height: auto;
 		background-color: #1e2626;
 	}
@@ -5083,7 +5052,6 @@ input[type="text"] {
 		width: 45%;
 		border: none;
 	}
-
 	/*---skills----*/
 	.skills {
 		background-repeat: repeat-y;
@@ -5617,27 +5585,23 @@ input[type="text"] {
 	}
 	/*=================================*/
 	.rebate {
-		padding: 35px 20px;
+		padding: 35px 20px 20px 20px;
 	}
 	.rebate__title {
 		display: block;
-		margin-bottom: 50px;
+		margin: 0 0 30px 0;
 		font-size: 1.5em;
 	}
-	.rebate__txt {
-		min-width: 70%;
-		max-width: 90%;
-		margin: 0 auto 50px auto;
-		font-size: 1.3em;
+	.rebate__list-item {
+		padding: 12px 0;
+	    font-size: 2.5vw;
 	}
-	.rebate__terms {
-		min-width: 40%;
-		max-width: 50%;
-		margin: 0 auto 50px auto;
-		line-height: 1.4em;
+	.rebate__list-item:before {
+	    width: 20px;
+	    height: 20px;
 	}
-	#rebate>p:nth-child(5) {
-		margin: 0;
+	.rebate__comment {
+		font-size: 0.7em;
 	}
 	/*============================*/
 	.faq {
@@ -5674,7 +5638,6 @@ input[type="text"] {
 		font-size: 0.9em;
 		line-height: 1.5em;
 	}
-	
 	.faq details:nth-child(6) > summary {
     	margin: 0 0 15px 0;
     	font-size: 1.2em;
@@ -5967,7 +5930,7 @@ input[type="text"] {
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
-		display: block
+		display: block;
 		height: auto;
 		background-color: #1e2626;
 	}
@@ -6758,43 +6721,31 @@ input[type="text"] {
 	}
 	/*==========================*/
 	.rebate {
-		padding: 45px 10px 30px 10px;
+		padding: 45px 10px 20px 10px;
 		background-size: 30%;
 	}
 	.rebate__title {
 		font-size: 1.3em;
 		line-height: 1.4;
-		margin-bottom: 40px;
+		margin: 0 0 20px 0;
 		font-weight: 700;
 	}
-	.rebate__txt {
-		width: 90%;
-		font-size: 1em;
-		margin: 0 auto 5px auto;
+	.rebate__list {
+	    max-width: 100%;
+    	padding: 0;
 	}
-	.rebate__terms {
-		width: 59%;
-		line-height: 1.4;
-		margin: 0 auto 15px auto;
+	.rebate__list-item {
+	    padding: 10px 0;
+	    font-size: 3vw;
+	    line-height: 1.4em;
+	    text-align: center;
 	}
-	.rebate p:last-child {
-		margin: 0 auto;
-		width: 95%;
-		font-size: 0.9em;
+	.rebate__list-item:before {
+	    display: none;
 	}
-	.rebate__txt, 
-	.rebate__terms {
-		font-size: 1em;
+	.rebate__comment {
+		font-style: italic;
 	}
-	.rebate__txt:nth-child(2):after, 
-	.rebate__terms:after {
-		height: 1.1px;
-	}
-
-	.rebate__txt:nth-child(4) {
-		margin: 0 auto 35px auto;
-	}
-
 	/*========================*/
 	.faq {
 	    padding: 75px 5px 45px 5px;
@@ -7308,23 +7259,23 @@ input[type="text"] {
 		font-size: 1.1em;
 	}
 	/*========================*/
-	.rebate__terms {
-		min-width: 85%;
-		max-width: 90%;
+	.rebate {
+		padding: 25px 10px 20px 10px;
 	}
-	.rebate__txt, 
-	.rebate__terms {
-		margin: 0 auto 5px auto;
-	    font-size: 0.8em;
-	    line-height: 1.3em;
+	.rebate__list {
+		max-width: 100%;
+		min-width: auto;
+		padding: 0;
 	}
-	.rebate__txt:nth-child(2):after, 
-	.rebate__terms:after {
-	    margin: 10px auto;
+	.rebate__list-item {
+	    font-size: 3.5vw;
+		text-align: center;
 	}
-	#rebate>p:nth-child(5) {
-    	margin: 40px auto 0 auto;
-    	font-size: 0.8em;
+	.rebate__list-item:before {
+		display: none;
+	}
+	.rebate__comment {
+	    font-size: 2.2vw;
 	}
 	/*========================*/
 	.faq {
@@ -7352,7 +7303,6 @@ input[type="text"] {
 		font-size: 0.85em;
 	}
 	.main-footer {
-		/*padding: 20px;*/
 	    padding: 20px 10px;
 	}
 	.main-footer-info {
