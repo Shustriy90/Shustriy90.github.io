@@ -13,7 +13,7 @@ $(window).bind('scroll', function () {
     }
 });
 
-var basePrice = 9800;
+var basePrice = 0;
 var currentPrice = basePrice;
 
 

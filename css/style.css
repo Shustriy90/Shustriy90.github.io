@@ -1301,11 +1301,20 @@ body {
 
 .course-price__txt {
 	width: 50%;
-	margin: 20px 0 10px 0;
+	margin: 5px 0 10px 0;
 	color: #fff;
 	font-size: 16px;
 	line-height: 1.5;
 	font-family: "Montserrat", sans-serif;
+}
+
+.course-price__txt:before {
+	display: block;
+	content: "* количество оставшихся мест указано для базового курса.";
+	margin: 0 0 15px 0;
+	font-style: italic;
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.78em;
 }
 
 
@@ -1355,9 +1364,11 @@ body {
 
 .new-advantages-item {
 	width: 400px;
-	margin-bottom: 61px;
+	margin: 0 0 61px 0;
 	font-family: "Montserrat", sans-serif;
 	line-height: 1.35em;
+	padding: 0 20px;
+	box-sizing: border-box;
 }
 
 .new-advantages-item:nth-child(2) {
@@ -1455,11 +1466,6 @@ body {
 	height: 450px;
 	margin-right: 33px;
 	border-radius: 10px;
-	-webkit-filter: grayscale(90%);
-	filter: grayscale(90%);
-}
-.about-teacher img:hover {
-	filter: grayscale(100%);
 }
 
 .about-teacher div {
@@ -2957,7 +2963,8 @@ input[type="text"] {
 	    -webkit-box-flex: 0;
 	    -ms-flex-positive: 0;
 	    flex-grow: 0;
-	    padding: 0;
+	    padding: 0 20px;
+	    box-sizing: border-box;
 	}
 	.new-advantages-list {
 	    font-size: 1.2em;
@@ -3145,6 +3152,9 @@ input[type="text"] {
 	.programm {
 	    background-position: center, 65% 24%, 98% 80%;
     	background-size: 100%, 50%, 45%;
+	}
+	.rebate__list-item {
+		font-size: 22px;
 	}
 }
 
@@ -6408,7 +6418,7 @@ input[type="text"] {
 	}
 	.course-price-next span:nth-child(2) {
 		font-family: 'Montserrat', sans-serif;
-		font-size: 21px;
+		font-size: 16px;
 	}
 	.course-price-next span:first-child:after {
 		content: "\20bd";
@@ -6419,6 +6429,10 @@ input[type="text"] {
 	}
 	.course-price-next:last-child {
 		margin: 0 0 20px 0;
+	}
+	.course-price-next:last-child, 
+	.course-price-next:nth-child(2) {
+	    width: 43%;
 	}
 	.course-price-btn_wrapper {
 		width: 100%;
@@ -7096,7 +7110,8 @@ input[type="text"] {
 	}
 	.course-price-next span:nth-child(2) {
 		font-family: 'Montserrat', sans-serif;
-		font-size: 1em;
+		/*font-size: 0.9em;*/
+		font-size: 3.8vw;
 	}
 	.course-price-next span:first-child:after {
 		font-size: 0.6em;
