@@ -13,9 +13,9 @@ $(window).bind('scroll', function () {
     }
 });
 
-var basePrice = 0;
+var basePrice = 9700;
 var currentPrice = basePrice;
-
+document.querySelector("#price").textContent = currentPrice;
 
 function updatePrice(chk, value) {
   if (chk.checked) {

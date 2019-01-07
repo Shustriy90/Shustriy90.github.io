@@ -6,9 +6,37 @@
 @font-face {
 	font-family: 'exo_2regular';
 	src: url('../fonts/exo/regular/exo2-regular.eot');
-	src: url('../fonts/exo/regular/exo2-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/exo/regular/exo2-regular.woff2') format('woff2'), url('../fonts/exo/regular/exo2-regular.woff') format('woff'), url('../fonts/exo/regular/exo2-regular.ttf') format('truetype');
+	src: local('Exo2 Regular'), local('Exo2-Regular'),
+		url('../fonts/exo/regular/exo2-regular.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/exo/regular/exo2-regular.woff2') format('woff2'), 
+		url('../fonts/exo/regular/exo2-regular.woff') format('woff'), 
+		url('../fonts/exo/regular/exo2-regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/regular/montserrat-regular.eot');
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat/regular/montserrat-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/regular/montserrat-regular.woff2') format('woff2'),
+        url('../fonts/montserrat/regular/montserrat-regular.woff') format('woff'),
+        url('../fonts/montserrat/regular/montserrat-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/bold/montserrat-bold.eot');
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/montserrat/bold/montserrat-bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/bold/montserrat-bold.woff2') format('woff2'),
+        url('../fonts/montserrat/bold/montserrat-bold.woff') format('woff'),
+        url('../fonts/montserrat/bold/montserrat-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 body {
@@ -348,7 +376,7 @@ body {
 	width: 100%;
 	padding-top: 10%;
 	background-color: #3b3b3b;
-	background-image: url('../img/advantages-background.jpg');
+	background-image: url('../img/advantages/advantages-background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -408,14 +436,14 @@ body {
 	display: block;
 	width: 47px;
 	height: 47px;
-	background-image: url('../img/advantages-list-item-tick.svg');
+	background-image: url('../img/advantages/advantages-list-item-tick.svg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	margin: 0 auto 14px auto;
 }
 
 .advantages-list-item:hover:before {
-	background-image: url('../img/advantages-list-item-tick-hover.svg');
+	background-image: url('../img/advantages/advantages-list-item-tick-hover.svg');
 }
 
 
@@ -426,7 +454,7 @@ body {
 	padding-bottom: 59px;
 	padding-left: 10%;
 	background-color: white;
-	background-image: url('../img/introduction-background.svg');
+	background-image: url('../img/introduction/introduction-background.svg');
 	background-repeat: no-repeat;
 	background-position: center right 180px;
     background-size: 30%;
@@ -4122,7 +4150,7 @@ input[type="text"] {
 	/*===========*/
 	.introduction {
 		padding: 30px;
-		background-image: url(../img/introduction-background-landscape.svg);
+		background-image: url(../img/introduction/introduction-background-landscape.svg);
 		background-size: 42%;
 	}
 	.intriduction_txt, 
@@ -5046,7 +5074,7 @@ input[type="text"] {
 	}
 	/*---intriduction----*/
 	.introduction {
-		background-image: url('../img/introduction-background-landscape.svg');
+		background-image: url('../img/introduction/introduction-background-landscape.svg');
 		background-position: 97% 50%;
 		background-size: 55%;
 	}
@@ -6050,13 +6078,13 @@ input[type="text"] {
 		display: block;
 		width: 47px;
 		height: 47px;
-		background-image: url('../img/advantages-list-item-tick.svg');
+		background-image: url('../img/advantages/advantages-list-item-tick.svg');
 		background-repeat: no-repeat;
 		background-size: 100%;
 		margin: 0 auto 14px auto;
 	}
 	.advantages-list-item:hover:before {
-		background-image: url('../img/advantages-list-item-tick-hover.svg');
+		background-image: url('../img/advantages/advantages-list-item-tick-hover.svg');
 	}
 	/*--introduction---*/
 	.introduction {
