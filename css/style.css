@@ -2588,6 +2588,7 @@ input[type="text"] {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
@@ -2603,7 +2604,8 @@ input[type="text"] {
 }
 
 .main-footer__copyright {
-	margin-left: 17px;
+    width: 100%;
+    margin: 8px 0 0 0;
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -3155,12 +3157,12 @@ input[type="text"] {
 	}
 
 	.main-footer__logoinfo {
-	    width: 20%;
-	    width: 270px;
+	    width: 260px;
 	    flex-wrap: wrap;
 	    justify-content: flex-start;
 	}
 	.main-footer__copyright {
+	    width: 100%;
 	    margin: 8px 0 0 0;
 	    font-size: 0.8em;
 	}
@@ -3249,7 +3251,7 @@ input[type="text"] {
 		left: 0;
 	}
 	.menu-dark:before {
-	    margin: 0px 2% 0 0;
+	    margin: 0 2% 0 0;
 	}
 	.menu-dark-list {
 		font-size: 0.9em;
