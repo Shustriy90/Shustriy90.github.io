@@ -43,6 +43,57 @@ $(".menu-link").click(function() {
 
 
 
+$(function($){
+    $.mask.definitions['~']='[ 1234567890+_]';
+    $("input[name='phone']").mask("~~~ (999) 999-9999");
+});
+
+$(function(){
+  'use strict';
+$('#faq-form').on('submit', function(e){
+    e.preventDefault();
+    var fd = new FormData( this );
+    $.ajax({
+      url: '../php/send.php',
+      type: 'POST',
+      contentType: false, 
+      processData: false, 
+      data: fd,
+      success: function(msg){
+if(msg == 'ok') {
+  //$(".button").val("Отправлено");
+  $('#faq-form')[0].reset();
+} else {
+        $(".button").val("Ошибка");
+        setTimeout(function() {$(".button").val("Отправить");}, 3000);
+}
+      }
+    });
+  });
+});
+
+// $(".faq-form").submit(function() {
+// var str = $(this).serialize();
+
+// $.ajax({
+// type: "POST",
+// url: "../php/contact.php",
+// data: str,
+// success: function(msg) {
+// if(msg == 'OK') {
+// result = '<p>Ваш заказ принят</p>';
+// $(".fields").hide();
+// } else {
+// result = msg;
+// }
+// $('.note').html(result);
+// }
+// });
+// return false;
+// });
+
+
+
 
 
 
